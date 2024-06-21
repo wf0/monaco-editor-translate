@@ -37,7 +37,9 @@ interface IActionDescriptor {
     - `null`:不显示在上下文菜单中
 
 
-<img src='../../assets/editor-addEditorAction-actionContextGroupID.png' />
+<p>
+    <img src='/editor-addEditorAction-actionContextGroupID.png' />
+</p>
 
 ## contextMenuOrder
 

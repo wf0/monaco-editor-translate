@@ -12,8 +12,8 @@ https://microsoft.github.io/monaco-editor/docs.html
 https://microsoft.github.io/monaco-editor/playground.html?source=v0.49.0
 :::
 
-<p align="center">
-    <img src='/assets/monaco.png' />
+<p>
+    <img src='/monaco.png' />
 </p>
 
 ## 下载
