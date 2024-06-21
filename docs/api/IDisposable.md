@@ -1,6 +1,19 @@
 # IDisposable
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/typedoc/interfaces/IDisposable.html
 :::
-        
+
+```ts
+interface IDisposable {
+    dispose(): void;
+}
+```
+
+## dispose
+
+- 类型: `Function`
+- 描述：释放资源
+
+## 返回值
+- 类型：`void`

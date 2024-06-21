@@ -12,6 +12,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "monaco-editor": "^0.49.0",
     "vue": "^3.4.21"
   },
   "devDependencies": {

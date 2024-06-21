@@ -1,0 +1,10 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #0076fc;
+  --vp-c-brand-2: #0076fc;
+  --vp-c-indigo-3: #0076fc;
+}
+/* 换行 */
+.VPDoc .container > .content * {
+  white-space: break-spaces !important;
+}
