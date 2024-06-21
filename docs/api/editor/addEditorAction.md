@@ -35,7 +35,7 @@ editor.addEditorAction({
 - 输出：
 
 <p align="left">
-    <img src='../../public/assets/editor-addEditorAction.png' />
+    <img src='/assets/editor-addEditorAction.png' />
 </p>
 
 ::: details 传送门
