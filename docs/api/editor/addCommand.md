@@ -37,7 +37,7 @@ myEditor.trigger(null, "command-123", { a: 100 });
 - 输出：
 
 <p align="left">
-    <img src='../assets/editor-addcommand.png' />
+    <img src='../../public/assets/editor-addCommand.png' />
 </p>
 
 ::: warning

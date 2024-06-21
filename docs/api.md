@@ -13,7 +13,7 @@ https://microsoft.github.io/monaco-editor/playground.html?source=v0.49.0
 :::
 
 <p align="center">
-    <img src='./assets/monaco.png' />
+    <img src='/public/assets/monaco.png' />
 </p>
 
 ## 下载
