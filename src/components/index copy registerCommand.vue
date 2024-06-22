@@ -20,12 +20,12 @@ onMounted(() => {
     language: "javascript",
   });
 
-  const text = "function add(a, b) { return a + b; }";
-  const languageId = "javascript";
-
-  const tokens = editor.tokenize(text, languageId);
-
-  console.log(tokens);
+  editor.registerCommand("commandID", (accessor, ...args) => {
+    console.log(accessor, args);
+  });
+  myEditor.trigger(null, "commandID", {
+    value: 1999,
+  });
 });
 </script>
 

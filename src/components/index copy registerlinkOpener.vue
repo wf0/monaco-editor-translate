@@ -16,16 +16,20 @@ onMounted(() => {
   fixError();
   const dom = document.querySelector(".editor");
   const myEditor = editor.create(dom, {
-    value: "// write your code here",
+    value: "// https://www.baidu.com",
     language: "javascript",
   });
 
-  const text = "function add(a, b) { return a + b; }";
-  const languageId = "javascript";
-
-  const tokens = editor.tokenize(text, languageId);
-
-  console.log(tokens);
+  editor.registerLinkOpener({
+    open(resource) {
+      console.log(resource);
+      // 只有return false 才能默认打开链接
+      // 包括 return false / return Promise.resolve(false)
+      // 当然可以手动调用 window.open(resource.toString())
+      return window.open(resource.toString());
+      // return Promise.resolve(false);
+    },
+  });
 });
 </script>
 
