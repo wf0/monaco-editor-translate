@@ -15,11 +15,26 @@ const { fixError } = useFixError();
 onMounted(() => {
   fixError();
   const dom = document.querySelector(".editor");
+
+  // 定义要注册的语言的扩展点对象
+  const language = {
+    id: "vue",
+    extensions: [".vue"],
+    aliases: ["vue", "Vue"],
+    mimetypes: ["text/vue"],
+  };
+
+  // 注册新语言
+  languages.register(language);
+
   editor.create(dom, {
-    value: "// demo",
-    language: "javascript",
+    value: `<template>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+  </div>
+</template>`,
+    language: "vue",
   });
-  
 });
 </script>
 

@@ -15,11 +15,16 @@ const { fixError } = useFixError();
 onMounted(() => {
   fixError();
   const dom = document.querySelector(".editor");
-  editor.create(dom, {
-    value: "// demo",
+ 
+  const myEditor = editor.create(dom, {
+    value: "// write your code here",
     language: "javascript",
   });
-  
+
+  const allLanguages = languages.getLanguages();
+  console.log(allLanguages);
+  const jsID = languages.getEncodedLanguageId("javascript");
+  console.log("javascript EncodedLanguageId:", jsID);
 });
 </script>
 
