@@ -38,6 +38,6 @@ editor.addEditorAction({
   <img src='/editor-addEditorAction.png'/>
 </p>
 
-::: details 传送门
+::: details KeyMod 传送门
 [KeyMod.chord 快捷键](/api/KeyMod.md)
 :::

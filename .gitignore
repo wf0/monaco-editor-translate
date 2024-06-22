@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist  # 需要将dist 打包结果托管 GitHub pages
 dist-ssr
 *.local
 
