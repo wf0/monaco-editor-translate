@@ -1,6 +1,15 @@
 # registerNewSymbolNameProvider
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#functions/languages.registerNewSymbolNameProvider.html
 :::
-        
+
+- 语法：`registerNewSymbolNameProvider(languageSelector, provider): IDisposable`
+
+- 参数：
+  - `languageSelector`: [LanguageSelector](/api/languages/LanguageSelector.md)
+  - `provider`: [NewSymbolNamesProvider](/api/languages/NewSymbolNamesProvider.md)
+
+- 返回值：[IDisposable](/api/IDisposable.md)
+
+- 描述：注册新的符号名称提供程序

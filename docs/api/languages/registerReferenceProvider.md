@@ -1,6 +1,15 @@
 # registerReferenceProvider
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#functions/languages.registerReferenceProvider.html
 :::
-        
+
+- 语法：`registerReferenceProvider(languageSelector, provider): IDisposable`
+
+- 参数：
+  - `languageSelector`: [LanguageSelector](/api/languages/LanguageSelector.md)
+  - `provider`: [ReferenceProvider](/api/languages/ReferenceProvider.md)
+
+- 返回值：[IDisposable](/api/IDisposable.md)
+
+- 描述：注册引用提供程序
