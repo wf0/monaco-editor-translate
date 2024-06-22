@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "doc": "vitepress dev docs",
-    "docs:dev": "vitepress dev docs",
+    "doc": "npm run docs:dev",
+    "docs:dev": "vitepress dev docs --port 8080 --open",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },

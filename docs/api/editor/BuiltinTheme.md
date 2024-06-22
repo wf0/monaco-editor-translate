@@ -1,6 +1,9 @@
 # BuiltinTheme
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/typedoc/types/editor.BuiltinTheme.html
 :::
-        
+
+```ts
+BuiltinTheme: "vs" | "vs-dark" | "hc-black" | "hc-light"
+```

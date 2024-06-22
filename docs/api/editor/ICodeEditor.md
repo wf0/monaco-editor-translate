@@ -1,6 +1,140 @@
 # ICodeEditor
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#interfaces/editor.ICodeEditor.html
 :::
-        
+
+```ts
+interface ICodeEditor {
+    onBeginUpdate: IEvent<void>;
+    onContextMenu: IEvent<IEditorMouseEvent>;
+    onDidAttemptReadOnlyEdit: IEvent<void>;
+    onDidBlurEditorText: IEvent<void>;
+    onDidBlurEditorWidget: IEvent<void>;
+    onDidChangeConfiguration: IEvent<ConfigurationChangedEvent>;
+    onDidChangeCursorPosition: IEvent<ICursorPositionChangedEvent>;
+    onDidChangeCursorSelection: IEvent<ICursorSelectionChangedEvent>;
+    onDidChangeHiddenAreas: IEvent<void>;
+    onDidChangeModel: IEvent<IModelChangedEvent>;
+    onDidChangeModelContent: IEvent<IModelContentChangedEvent>;
+    onDidChangeModelDecorations: IEvent<IModelDecorationsChangedEvent>;
+    onDidChangeModelLanguage: IEvent<IModelLanguageChangedEvent>;
+    onDidChangeModelLanguageConfiguration: IEvent<IModelLanguageConfigurationChangedEvent>;
+    onDidChangeModelOptions: IEvent<IModelOptionsChangedEvent>;
+    onDidCompositionEnd: IEvent<void>;
+    onDidCompositionStart: IEvent<void>;
+    onDidContentSizeChange: IEvent<IContentSizeChangedEvent>;
+    onDidFocusEditorText: IEvent<void>;
+    onDidFocusEditorWidget: IEvent<void>;
+    onDidLayoutChange: IEvent<EditorLayoutInfo>;
+    onDidPaste: IEvent<IPasteEvent>;
+    onDidScrollChange: IEvent<IScrollEvent>;
+    onEndUpdate: IEvent<void>;
+    onKeyDown: IEvent<IKeyboardEvent>;
+    onKeyUp: IEvent<IKeyboardEvent>;
+    onMouseDown: IEvent<IEditorMouseEvent>;
+    onMouseLeave: IEvent<IPartialEditorMouseEvent>;
+    onMouseMove: IEvent<IEditorMouseEvent>;
+    onMouseUp: IEvent<IEditorMouseEvent>;
+    onWillChangeModel: IEvent<IModelChangedEvent>;
+    addContentWidget(widget): void;
+    addGlyphMarginWidget(widget): void;
+    addOverlayWidget(widget): void;
+    applyFontInfo(target): void;
+    changeViewZones(callback): void;
+    createDecorationsCollection(decorations?): IEditorDecorationsCollection;
+    deltaDecorations(oldDecorations, newDecorations): string[];
+    dispose(): void;
+    executeCommand(source, command): void;
+    executeCommands(source, commands): void;
+    executeEdits(source, edits, endCursorState?): boolean;
+    focus(): void;
+    getAction(id): IEditorAction;
+    getBottomForLineNumber(lineNumber): number;
+    getContainerDomNode(): HTMLElement;
+    getContentHeight(): number;
+    getContentWidth(): number;
+    getContribution<T>(id): T;
+    getDecorationsInRange(range): IModelDecoration[];
+    getDomNode(): HTMLElement;
+    getEditorType(): string;
+    getId(): string;
+    getLayoutInfo(): EditorLayoutInfo;
+    getLineDecorations(lineNumber): IModelDecoration[];
+    getModel(): ITextModel;
+    getOffsetForColumn(lineNumber, column): number;
+    getOption<T>(id): FindComputedEditorOptionValueById<T>;
+    getOptions(): IComputedEditorOptions;
+    getPosition(): Position;
+    getRawOptions(): IEditorOptions;
+    getScrollHeight(): number;
+    getScrollLeft(): number;
+    getScrollTop(): number;
+    getScrollWidth(): number;
+    getScrolledVisiblePosition(position): {
+        height: number;
+        left: number;
+        top: number;
+    };
+    getSelection(): Selection;
+    getSelections(): Selection[];
+    getSupportedActions(): IEditorAction[];
+    getTargetAtClientPoint(clientX, clientY): IMouseTarget;
+    getTopForLineNumber(lineNumber, includeViewZones?): number;
+    getTopForPosition(lineNumber, column): number;
+    getValue(options?): string;
+    getVisibleColumnFromPosition(position): number;
+    getVisibleRanges(): Range[];
+    handleInitialized?(): void;
+    hasPendingScrollAnimation(): boolean;
+    hasTextFocus(): boolean;
+    hasWidgetFocus(): boolean;
+    layout(dimension?, postponeRendering?): void;
+    layoutContentWidget(widget): void;
+    layoutGlyphMarginWidget(widget): void;
+    layoutOverlayWidget(widget): void;
+    onDidDispose(listener): IDisposable;
+    popUndoStop(): boolean;
+    pushUndoStop(): boolean;
+    removeContentWidget(widget): void;
+    removeDecorations(decorationIds): void;
+    removeGlyphMarginWidget(widget): void;
+    removeOverlayWidget(widget): void;
+    render(forceRedraw?): void;
+    restoreViewState(state): void;
+    revealLine(lineNumber, scrollType?): void;
+    revealLineInCenter(lineNumber, scrollType?): void;
+    revealLineInCenterIfOutsideViewport(lineNumber, scrollType?): void;
+    revealLineNearTop(lineNumber, scrollType?): void;
+    revealLines(startLineNumber, endLineNumber, scrollType?): void;
+    revealLinesInCenter(lineNumber, endLineNumber, scrollType?): void;
+    revealLinesInCenterIfOutsideViewport(lineNumber, endLineNumber, scrollType?): void;
+    revealLinesNearTop(lineNumber, endLineNumber, scrollType?): void;
+    revealPosition(position, scrollType?): void;
+    revealPositionInCenter(position, scrollType?): void;
+    revealPositionInCenterIfOutsideViewport(position, scrollType?): void;
+    revealPositionNearTop(position, scrollType?): void;
+    revealRange(range, scrollType?): void;
+    revealRangeAtTop(range, scrollType?): void;
+    revealRangeInCenter(range, scrollType?): void;
+    revealRangeInCenterIfOutsideViewport(range, scrollType?): void;
+    revealRangeNearTop(range, scrollType?): void;
+    revealRangeNearTopIfOutsideViewport(range, scrollType?): void;
+    saveViewState(): ICodeEditorViewState;
+    setBanner(bannerDomNode, height): void;
+    setModel(model): void;
+    setPosition(position, source?): void;
+    setScrollLeft(newScrollLeft, scrollType?): void;
+    setScrollPosition(position, scrollType?): void;
+    setScrollTop(newScrollTop, scrollType?): void;
+    setSelection(selection, source?): void;
+    setSelection(selection, source?): void;
+    setSelection(selection, source?): void;
+    setSelection(selection, source?): void;
+    setSelections(selections, source?): void;
+    setValue(newValue): void;
+    trigger(source, handlerId, payload): void;
+    updateOptions(newOptions): void;
+    writeScreenReaderContent(reason): void;
+}
+```
