@@ -9,17 +9,16 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { editor, KeyMod, KeyCode, Uri, languages } from "monaco-editor";
+import { editor, languages } from "monaco-editor";
 import { useFixError } from "../utils/useFixError";
 const { fixError } = useFixError();
 onMounted(() => {
   fixError();
   const dom = document.querySelector(".editor");
   editor.create(dom, {
-    value: "// demo",
+    value: 'function foo() { console.log("Hello, world!"); }',
     language: "javascript",
   });
-  
 });
 </script>
 
