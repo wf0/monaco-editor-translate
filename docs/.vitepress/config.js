@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 import { sidebar } from "./sidebar";
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Monaco Editor Translate",
@@ -14,7 +13,10 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "API 文档", link: "/api" },
-      { text: "英文官网", link: "https://microsoft.github.io/monaco-editor/docs.html" },
+      {
+        text: "英文官网",
+        link: "https://microsoft.github.io/monaco-editor/docs.html",
+      },
     ],
     // 搜索
     search: { provider: "local" },
