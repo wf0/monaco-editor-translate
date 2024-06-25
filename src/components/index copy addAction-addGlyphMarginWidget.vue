@@ -3,6 +3,7 @@
 <template>
   <div>
     <div class="editor"></div>
+    <div id="glayphID_123122">测试glayphID内容</div>
   </div>
 </template>
 
@@ -23,38 +24,6 @@ onMounted(() => {
     language: "javascript",
   });
 
-  // myEditor.changeViewZones((accessor) => {
-  //   accessor.addZone({
-  //     domNode: document.querySelector("#overlay"),
-  //     afterLineNumber: 0,
-  //     heightInPx: 100,
-  //     onDomNodeTop: (top) => {
-  //       document.querySelector("#overlay").style.top = top + "px";
-  //     },
-  //   });
-  // });
-
-  // const command = myEditor.addCommand(KeyMod.CtrlCmd | KeyCode.KeyM, () => {
-  //   console.log("command");
-  // });
-
-  // myEditor.executeCommand(null, {
-  //   getEditOperations(model, builder) {
-  //     console.log("getEditOperations", model, builder);
-  //   },
-  // });
-
-  // myEditor.executeEdits(null, [
-  //   {
-  //     text: "测试 executeEdits",
-  //     range: new monaco.Range(1, 1, 1, 1),
-  //   },
-  //   {
-  //     text: "测试 222",
-  //     range: new monaco.Range(1, 10, 1, 10),
-  //   },
-  // ]);
-
   // myEditor.addAction({
   //   id: "action",
   //   label: "action",
@@ -64,13 +33,37 @@ onMounted(() => {
   //     console.log("action");
   //   },
   // });
-  // const action = myEditor.getAction("action");
-  // console.log(action);
-  // action.run();
 
-  // console.log(myEditor.getBottomForLineNumber(1));
+  // myEditor.addCommand(KeyMod.CtrlCmd | KeyCode.KeyM, () => {
+  //   console.log("command");
+  // });
 
-  // console.log(myEditor.getContainerDomNode());
+  // myEditor.addContentWidget({
+  //   getId: () => "contentID_123",
+  //   getDomNode: () => document.querySelector("#contentID_123"),
+  //   getPosition: () => ({
+  //     position: new Position(10, 10),
+  //     preference: [editor.ContentWidgetPositionPreference.BELOW],
+  //   }),
+  // });
+
+  // myEditor.addGlyphMarginWidget({
+  //   getDomNode: () => document.querySelector("#glayphID_123122"),
+  //   getId: () => "glayphID_123122",
+  //   getPosition: () => ({
+  //     lane: editor.GlyphMarginLane.Center,
+  //     range: new monaco.Range(1, 3, 1, 5),
+  //     zIndex: 999,
+  //   }),
+  // });
+
+  // myEditor.addOverlayWidget({
+  //   getDomNode: () => document.querySelector("#overlay"),
+  //   getId: () => "overlay",
+  //   getPosition: () => ({
+  //     preference: editor.OverlayWidgetPositionPreference.TOP_RIGHT_CORNER,
+  //   }),
+  // });
 });
 </script>
 
@@ -93,9 +86,5 @@ onMounted(() => {
   background-color: red;
   color: #fff;
   display: block !important;
-}
-#overlay {
-  padding: 10px;
-  background-color: red;
 }
 </style>

@@ -21,11 +21,7 @@ export default defineConfig({
     ],
     // 搜索
     search: { provider: "local" },
-    // 侧边栏 - 只有 /api 才显示侧边栏
-    sidebar: {
-      "/api": sidebar,
-    },
-
+    sidebar,
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
