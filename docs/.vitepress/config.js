@@ -13,6 +13,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "API 文档", link: "/api" },
+      // { text: "学习建议", link: "/learn" },
       {
         text: "英文官网",
         link: "https://microsoft.github.io/monaco-editor/docs.html",
@@ -20,8 +21,10 @@ export default defineConfig({
     ],
     // 搜索
     search: { provider: "local" },
-    // 侧边栏
-    sidebar,
+    // 侧边栏 - 只有 /api 才显示侧边栏
+    sidebar: {
+      "/api": sidebar,
+    },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },

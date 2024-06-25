@@ -9,7 +9,7 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { editor, languages } from "monaco-editor";
+import { editor, languages, KeyCode } from "monaco-editor";
 import { useFixError } from "../utils/useFixError";
 const { fixError } = useFixError();
 onMounted(() => {
@@ -20,15 +20,16 @@ onMounted(() => {
     language: "javascript",
   });
   edi.onKeyDown((e) => {
-    console.group("Monaco Editor KeyCode");
-    console.log("key", e.browserEvent.key);
-    console.log("keyCode", e.keyCode);
-    console.groupEnd();
+    if (e.keyCode === KeyCode.KeyB) console.log("Key B");
+    // console.group("Monaco Editor KeyCode");
+    // console.log("key", e.browserEvent.key);
+    // console.log("keyCode", e.keyCode);
+    // console.groupEnd();
 
-    console.group("Window KeyCode");
-    console.log("key", e.browserEvent.key);
-    console.log("keyCode", e.browserEvent.keyCode);
-    console.groupEnd();
+    // console.group("Window KeyCode");
+    // console.log("key", e.browserEvent.key);
+    // console.log("keyCode", e.browserEvent.keyCode);
+    // console.groupEnd();
   });
 });
 </script>

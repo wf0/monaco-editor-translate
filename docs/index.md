@@ -12,6 +12,9 @@ hero:
     - theme: brand
       text: 快速开始
       link: /api
+    # - theme: alt
+    #   text: 学习建议
+    #   link: /learn
 ---
 
 ::: danger ⛔ 写在前面
@@ -27,6 +30,6 @@ hero:
 
 3️⃣ 官网 API 较多，本文基于[Monaco Editor API](https://microsoft.github.io/monaco-editor/docs.html)、Chat GPT4、翻译软件共同整理，部分内容可能存在错误，如果发现，可及时提出修改，或提交 PR、issue；
 
-4️⃣ 截至本文档更新时间，Monaco Editor 0.49.0 版本已发布，**若后续版本产生的 API 差异、后续版本更新等导致文档不一致，请以官网文档为准**，或直接提出修改、提交 PR、issue 等以保证文档一致性。
+4️⃣ 截至本文档更新时间，Monaco Editor 0.49.0 版本已发布，**若后续版本产生的 API 差异、版本更新等导致文档不一致，请以官网文档为准**，或直接提出修改、提交 PR、issue 等以保证文档一致性。
 :::
 

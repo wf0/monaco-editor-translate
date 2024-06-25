@@ -38,6 +38,20 @@ KeyCode 不需要铭记，使用过程中，实时打印 keyCode 查看键码即
 实测键码会根据键盘类型、键盘布局、系统语言等，会有所差异。
 :::
 
+## 使用须知
+
+列举这么多键码，并不是为了用户在使用过程中进行查询映射，而是快捷使用键值🐎，方便使用。
+
+::: danger 枚举特性实现 keyCode 的映射
+```js
+import { KeyCode } from 'monaco-editor';
+ edi.onKeyDown((e) => {
+    // 更推荐使用枚举的特性实现 keyCode 的映射
+    if(e.keyCode === KeyCode.Escape) // ...
+ })
+```
+:::
+
 ## ABNT_C1
 - 键码：`115`
 - 描述：`ABNT_C1（巴西）键`
