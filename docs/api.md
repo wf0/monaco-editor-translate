@@ -45,12 +45,15 @@ monaco.editor.create(document.getElementById('container'), {
   
     namespace 是一种将相关代码组织在一起的方式，它出现在 ES 模块诞生之前，作为 TypeScript 自己的模块格式而发明的。
 
-    ```js
-    // namespace 具名导出
-    // import * as monaco from 'monaco-editor';
-    import { editor } from 'monaco-editor';
-    // editor.create(...)
-    ```
+::: warning 温馨提示
+本文主要是通过具名导出实现的样例，后续极少出现 monaco.editor.create 的用法，更多的是 editor.create 的用法。
+:::
+
+```js
+// import * as monaco from 'monaco-editor';
+import { editor } from 'monaco-editor';
+editor.create(...)
+```
    
 
 - **Class（类）**

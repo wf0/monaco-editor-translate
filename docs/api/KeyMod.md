@@ -18,8 +18,6 @@ export class KeyMod {
 
 ::: danger 注意
 很多人一想到 Class，就去想 new Class() 得到实例对象，但是别忘了，有些方法和属性是可以直接定义为 static 的，所以，KeyMod.CtrlCmd 等等，都是可以直接访问的，不需要 new KeyMod()。
-
-**需不需要得看官网的API样例哈。**
 :::
 
 ## Alt

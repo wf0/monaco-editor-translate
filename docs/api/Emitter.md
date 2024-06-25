@@ -1,6 +1,7 @@
 # Emitter
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#classes/Emitter.html
 :::
-        
+
+未完成

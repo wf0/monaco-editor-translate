@@ -4,6 +4,8 @@
 https://microsoft.github.io/monaco-editor/docs.html#modules/languages.html
 :::
 
+    languages 是语言服务模块，提供了常用的 javascript、typescript、css、html 等语言的语法高亮、代码提示、代码片段等功能。
+
 ## getEncodedLanguageId
 <!--@include: ./languages/getEncodedLanguageId.md{6,}-->
 

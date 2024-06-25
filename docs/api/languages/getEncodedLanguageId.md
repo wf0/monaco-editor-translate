@@ -19,7 +19,7 @@ https://microsoft.github.io/monaco-editor/docs.html#functions/languages.getEncod
 const allLanguages = languages.getLanguages();
 console.log(allLanguages);
 // 这个 ID 就是 languages.getLanguages(); 数组中的下标
-const jsID = languages.getEncodedLanguageId("plaintext");
+const jsID = languages.getEncodedLanguageId("javascript");
 console.log(jsID);
 ```
 

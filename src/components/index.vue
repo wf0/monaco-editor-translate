@@ -9,27 +9,19 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { editor, languages, KeyCode } from "monaco-editor";
+import { editor, languages, KeyCode, Position } from "monaco-editor";
+import * as monaco from "monaco-editor";
 import { useFixError } from "../utils/useFixError";
+import { KeyMod } from "monaco-editor";
 const { fixError } = useFixError();
+window.monaco = monaco;
 onMounted(() => {
   fixError();
   const dom = document.querySelector(".editor");
-  const edi = editor.create(dom, {
-    value: 'function foo() { console.log("Hello, world!"); }',
-    language: "javascript",
-  });
-  edi.onKeyDown((e) => {
-    if (e.keyCode === KeyCode.KeyB) console.log("Key B");
-    // console.group("Monaco Editor KeyCode");
-    // console.log("key", e.browserEvent.key);
-    // console.log("keyCode", e.keyCode);
-    // console.groupEnd();
 
-    // console.group("Window KeyCode");
-    // console.log("key", e.browserEvent.key);
-    // console.log("keyCode", e.browserEvent.keyCode);
-    // console.groupEnd();
+  const myEditor = editor.create(dom, {
+    value: `// create a model`,
+    language: "javascript",
   });
 });
 </script>

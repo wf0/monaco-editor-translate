@@ -6,7 +6,7 @@ https://microsoft.github.io/monaco-editor/docs.html#enums/KeyCode.html
 
 ## 注意事项
 ::: danger 注意 
-这里的 KeyCode 是 Monaco Editor，是虚拟代码，该值不具有任何固有含义。
+这里的 KeyCode 是 Monaco Editor 键盘映射的虚拟代码，该值不具有任何固有含义。
 
 **该值与 Windows 键盘键码不同，不具备一致性，仅作为虚拟键盘键码，在 Monaco Editor 中使用。**
 
