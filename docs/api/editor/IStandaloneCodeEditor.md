@@ -864,124 +864,278 @@ action.run();
 
 
 ## saveViewState
+- 语法：`saveViewState(): ICodeEditorViewState`
+- 返回值：[ICodeEditorViewState](/api/editor/ICodeEditorViewState.md)
+- 描述：保存编辑器的视图状态。
 
 
 ## setBanner
+- 语法：`setBanner(bannerDomNode, height): void`
+- 参数：
+  - `bannerDomNode`: `HTMLElement`
+  - `height`: `number`
+- 描述：设置编辑器的横幅。
 
 
 ## setModel
+- 语法：`setModel(model: ITextModel): void`
+- 参数：[ItextModel](/api/editor/ITextModel.md)
+- 描述：设置编辑器模型。
 
 
 ## setPosition
+- 语法：`setPosition(position, source?): void`
+- 参数：
+  - [IPosition](/api/IPosition.md)
+  - `source`: `string`
+- 描述：设置编辑器位置。
 
 
 ## setScrollLeft
+- 语法：`setScrollLeft(newScrollLeft, scrollType?): void`
+- 参数：
+  - `newScrollLeft`: `number`
+  - `scrollType`: [scrollType](/api/editor/ScrollType.md)
+- 描述：设置编辑器水平滚动。
 
 
 ## setScrollPosition
+- 语法：`setScrollPosition(position, scrollType?): void`
+- 参数：
+  - `position`: [INewScrollPosition](/api/editor/INewScrollPosition.md)
+  - `scrollType`: [scrollType](/api/editor/ScrollType.md)
+- 描述：设置编辑器滚动位置。
 
 
 ## setScrollTop
+- 语法：`setScrollTop(newScrollTop, scrollType?): void`
+- 参数：
+  - `newScrollTop`: `number`
+  - `scrollType`: [scrollType](/api/editor/ScrollType.md)
+- 描述：设置编辑器垂直滚动。
 
 
 ## setSelection
-
+- 语法：`setSelection(selection, source?): void`
+- 参数：
+  - `selection`: [IRange](/api/IRange.md)
+  - `source`: `string`
+- 描述：设置编辑器选择。
+<img src='/setSelection.gif' />
 
 ## setSelections
+- 语法：`setSelections(selections, source?): void`
+- 参数：
+  - `selections`: `readonly` [ISelection](/api/ISelection.md)[]
+  - `source`: `string`
+- 描述：设置编辑器选择。
 
 
 ## setValue
+- 语法：`setValue(newValue: string): void`
+- 参数：`newValue`: `string`
+- 描述：设置编辑器值(这种方式只能修改值，不能修改语言类型)。
+<img src='/myEditorSetValue.gif' />
 
 
 ## trigger
+- 语法：`trigger(source: string, handlerId: string, payload: any): void`
+- 参数：
+  - `source`: `string`
+  - `handlerId`: `string`
+  - `payload`: `any` 传递给命令处理程序的参数
+- 描述：触发编辑器命令。
 
 
 ## updateOptions
-
+- 语法：`updateOptions(newOptions): void`
+- 参数：`newOptions`:[IEditorOptions](/api/editor/IEditorOptions.md) & [IGlobalEditorOptions](/api/editor/IGlobalEditorOptions.md)
+- 描述：更新编辑器选项。
 
 ## writeScreenReaderContent
+- 语法：`writeScreenReaderContent(reason): void`
+- 参数：`reason`: `string`
+- 描述：将编辑器内容写入屏幕阅读器。
 
 
 ## onContextMenu
-
+- 语法：`onContextMenu: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：监听编辑器上下文菜单事件。
+- 示例：
+```js
+  myEditor.onContextMenu(({ event, target }) => {
+    console.log(event,target);
+  });
+```
+<img src='/onContextMenu.gif' />
 
 ## onDidAttemptReadOnlyEdit
+- 语法：`onDidAttemptReadOnlyEdit: IEvent<void>`
+- 描述：监听编辑器尝试只读编辑事件。
+- 示例：
+```js
+ const myEditor = editor.create(dom, {
+    value: `// create a model`,
+    language: "javascript",
+    readOnly: true, // 配置只读
+  });
 
+    myEditor.onDidAttemptReadOnlyEdit(() => {
+    console.log("onDidAttemptReadOnlyEdit");
+  });
+```
+<img src='/onDidAttemptReadOnlyEdit.gif' />
 
 ## onDidBlurEditorText
+- 语法：`onDidBlurEditorText: IEvent<void>`
+- 描述：监听编辑器失去焦点事件。
 
 
 ## onDidBlurEditorWidget
+- 语法：`onDidBlurEditorWidget: IEvent<void>`
+- 描述：监听编辑器 Widget 失去焦点事件。
 
 
 ## onDidChangeConfiguration
+- 语法：`onDidChangeConfiguration: IEvent<ConfigurationChangedEvent>`
+- 参数：[ConfigurationChangedEvent](/api/editor/ConfigurationChangedEvent.md)
+- 描述：监听编辑器配置改变事件。
 
 
 ## onDidChangeCursorPosition
-
+- 语法：`onDidChangeCursorPosition: IEvent<ICursorPositionChangedEvent>`
+- 参数：[ICursorPositionChangedEvent](/api/editor/ICursorPositionChangedEvent.md)
+- 描述：监听编辑器光标位置改变事件。
+```js
+  myEditor.onDidChangeCursorPosition((e) => {
+    console.log("onDidChangeCursorPosition", e);
+  });
+```
+<img src='/onDidChangeCursorPosition.png' />
 
 ## onDidChangeCursorSelection
+- 语法：`onDidChangeCursorSelection: IEvent<ICursorSelectionChangedEvent>`
+- 参数：[ICursorSelectionChangedEvent](/api/editor/ICursorSelectionChangedEvent.md)
+- 描述：监听编辑器光标选择改变事件。
 
 
 ## onDidChangeHiddenAreas
+- 语法：`onDidChangeHiddenAreas: IEvent<void>`
+- 描述：监听编辑器隐藏区域改变事件。
 
 
 ## onDidChangeModel
+- 语法：`onDidChangeModel: IEvent<IModelChangedEvent>`
+- 参数：[IModelChangedEvent](/api/editor/IModelChangedEvent.md)
+- 描述：监听编辑器模型改变事件。
 
 
 ## onDidChangeModelContent
+- 语法：`onDidChangeModelContent: IEvent<IModelContentChangedEvent>`
+- 参数：[IModelContentChangedEvent](/api/editor/IModelContentChangedEvent.md)
+- 描述：监听编辑器模型内容改变事件。
 
 
 ## onDidChangeModelDecorations
+- 语法：`onDidChangeModelDecorations: IEvent<IModelDecorationsChangedEvent>`
+- 参数：[IModelDecorationsChangedEvent](/api/editor/IModelDecorationsChangedEvent.md)
+- 描述：监听编辑器模型装饰改变事件。
 
 
 ## onDidChangeModelLanguage
+- 语法：`onDidChangeModelLanguage: IEvent<IModelLanguageChangedEvent>`
+- 参数：[IModelLanguageChangedEvent](/api/editor/IModelLanguageChangedEvent.md)
+- 描述：监听编辑器模型语言改变事件。
 
 
 ## onDidChangeModelLanguageConfiguration
+- 语法：`onDidChangeModelLanguageConfiguration: IEvent<IModelLanguageConfigurationChangedEvent>`
+- 参数：[IModelLanguageConfigurationChangedEvent](/api/editor/IModelLanguageConfigurationChangedEvent.md)
+- 描述：监听编辑器模型语言配置改变事件。
 
 
 ## onDidChangeModelOptions
+- 语法：`onDidChangeModelOptions: IEvent<IModelOptionsChangedEvent>`
+- 参数：[IModelOptionsChangedEvent](/api/editor/IModelOptionsChangedEvent.md)
+- 描述：监听编辑器模型选项改变事件。
 
 
 ## onDidContentSizeChange
+- 语法：`onDidContentSizeChange: IEvent<IContentSizeChangedEvent>`
+- 参数：[IContentSizeChangedEvent](/api/editor/IContentSizeChangedEvent.md)
+- 描述：监听编辑器内容大小改变事件。
 
 
 ## onDidFocusEditorText
+- 语法：`onDidFocusEditorText: IEvent<void>`
+- 描述：监听编辑器获得焦点事件。
 
 
 ## onDidFocusEditorWidget
+- 语法：`onDidFocusEditorWidget: IEvent<void>`
+- 描述：监听编辑器 Widget 获得焦点事件。
 
 
 ## onDidLayoutChange
+- 语法：`onDidLayoutChange: IEvent<EditorLayoutInfo>`
+- 参数：[EditorLayoutInfo](/api/editor/EditorLayoutInfo.md)
 
 
 ## onDidPaste
+- 语法：`onDidPaste: IEvent<IPasteEvent>`
+- 参数：[IPasteEvent](/api/editor/IPasteEvent.md)
+- 描述：监听编辑器粘贴事件。
 
 
 ## onDidScrollChange
+- 语法：`onDidScrollChange: IEvent<IScrollEvent>`
+- 参数：[IScrollEvent](/api/IScrollEvent.md)
+- 描述：监听编辑器滚动事件。
 
 
 ## onKeyDown
+- 语法：`onKeyDown: IEvent<IKeyboardEvent>`
+- 参数：[IKeyboardEvent](/api/IKeyboardEvent.md)
+- 描述：监听编辑器按键按下事件。
 
 
 ## onKeyUp
+- 语法：`onKeyUp: IEvent<IKeyboardEvent>`
+- 参数：[IKeyboardEvent](/api/IKeyboardEvent.md)
+- 描述：监听编辑器按键抬起事件。
 
 
 ## onMouseDown
+- 语法：`onMouseDown: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：监听编辑器鼠标按下事件。
 
 
 ## onMouseLeave
+- 语法：`onMouseLeave: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：监听编辑器鼠标离开事件。
 
 
 ## onMouseMove
+- 语法：`onMouseMove: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：监听编辑器鼠标移动事件。
 
 
 ## onMouseUp
+- 语法：`onMouseUp: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：监听编辑器鼠标抬起事件。
 
 
 ## onWillChangeModel
+- 语法：`onWillChangeModel: IEvent<IModelChangedEvent>`
+- 参数：[IModelChangedEvent](/api/editor/IModelChangedEvent.md)
+- 描述：监听编辑器模型即将改变事件。
 
 
 ## onDidDispose
-
+- 语法：`onDidDispose: IEvent<void>`
+- 描述：监听编辑器销毁事件。
