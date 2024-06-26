@@ -447,180 +447,420 @@ action.run();
 
 
 ## getDomNode
+- 语法：`getDomNode(): HTMLElement`
+- 返回值：`HTMLElement`
+- 描述：获取 DOM 节点。
 
 
 ## getEditorType
+- 语法：`getEditorType(): string`
+- 返回值：`string`
+- 描述：获取编辑器类型。
 
 
 ## getId
+- 语法：`getId(): string`
+- 返回值：`string`
+- 描述：获取编辑器 ID。
 
 
 ## getLayoutInfo
+- 语法：`getLayoutInfo(): EditorLayoutInfo`
+- 返回值：[EditorLayoutInfo](/api/editor/EditorLayoutInfo.md)
+- 描述：获取编辑器布局信息。
 
 
 ## getLineDecorations
+- 语法：`getLineDecorations(lineNumber): IModelDecoration[]`
+- 参数：`lineNumber`: `number`
+- 返回值：[IModelDecoration](/api/editor/IModelDecoration.md)[]
+- 描述：获取行装饰集合。
 
 
 ## getModel
+- 语法：`getModel(): ITextModel`
+- 返回值：[ITextModel](/api/editor/ITextModel.md)
+- 描述：获取编辑器模型。模型中有ID、文本、语言和编辑器等非常有用的信息，后面在实现tab、记录状态时都需要用到。
+<img src='/myEditorGetModel.png' />
 
 
 ## getOffsetForColumn
+- 语法：`getOffsetForColumn(lineNumber, column): number`
+- 参数：
+  - `lineNumber`: `number`
+  - `column`: `number`
+- 返回值：`number`
+- 描述：获取偏移量。
 
 
 ## getOption
+- 语法：`getOption<T>(id): FindComputedEditorOptionValueById<T>`
+- 泛型：`T extends` [EditorOption](/api/editor/EditorOption.md)
+- 参数：`id`: `T`
+- 返回值：[FindComputedEditorOptionValueById](/api/editor/FindComputedEditorOptionValueById.md)`<T>`
+- 描述：获取编辑器选项。
 
 
 ## getOptions
+- 语法：`getOptions(): IComputedEditorOptions`
+- 返回值：[IComputedEditorOptions](/api/editor/IComputedEditorOptions.md)
+- 描述：获取编辑器选项。
 
 
 ## getPosition
+- 语法：`getPosition(): Position`
+- 返回值：[Position](/api/Position.md)
+- 描述：获取编辑器位置。
+<img src='/getPosition.png' />
 
 
 ## getRawOptions
+- 语法：`getRawOptions(): IEditorOptions`
+- 返回值：[IEditorOptions](/api/editor/IEditorOptions.md)
+- 描述：获取编辑器原始选项。
 
 
 ## getScrollHeight
+- 语法：`getScrollHeight(): number`
+- 返回值：`number`
+- 描述：获取编辑器视口的scrollHeight。
 
 
 ## getScrollLeft
+- 语法：`getScrollLeft(): number`
+- 返回值：`number`
+- 描述：获取编辑器视口的scrollLeft。
 
 
 ## getScrollTop
+- 语法：`getScrollTop(): number`
+- 返回值：`number`
+- 描述：获取编辑器视口的scrollTop。
 
 
 ## getScrollWidth
+- 语法：`getScrollWidth(): number`
+- 返回值：`number`
+- 描述：获取编辑器视口的scrollWidth。
 
 
 ## getScrolledVisiblePosition
+- 语法：`getScrolledVisiblePosition(position): { height: number; top: number; left: number; }`
+- 参数：`position`: [Position](/api/Position.md)
+- 描述：获取位置的可见位置，结果位置考虑了滚动，并且相对于编辑器的左上角。说明1：如果用户滚动编辑器，对于相同的位置，此方法的结果会发生变化。说明2：如果重新定位编辑器的容器，则此方法的结果不会改变。警告：对于当前编辑器视口之外的位置，此方法的结果不准确。
+<img src='/getScrolledVisiblePosition.png' />
 
 
 ## getSelection
+- 语法：`getSelection(): Selection`
+- 返回值：[Selection](/api/Selection.md)
+- 描述：获取编辑器选择。
+<img src='/getSelect.png' />
 
 
 ## getSelections
+- 语法：`getSelections(): Selection[]`
+- 返回值：[Selection](/api/Selection.md)[]
+- 描述：获取编辑器选择集合。
+<img src='/getSelections.png' />
 
 
 ## getSupportedActions
+- 语法：`getSupportedActions(): IEditorAction[]`
+- 返回值：[IEditorAction](/api/editor/IEditorAction.md)[]
+- 描述：获取支持的编辑器动作。
+<img src='/getSupportedActions.png' />
 
 
 ## getTargetAtClientPoint
+- 语法：`getTargetAtClientPoint(clientX, clientY): IMouseTarget`
+- 参数：
+  - `clientX`: `number`
+  - `clientY`: `number`
+- 返回值：[IMouseTarget](/api/editor/IMouseTarget.md)
+- 描述：获取客户端点对应的目标。
+<img src='/getTargetAtClientPoint.png' />
 
 
 ## getTopForLineNumber
+- 语法：`getTopForLineNumber(lineNumber, includeViewZones?): number`
+- 参数：
+  - `lineNumber`: `number`
+  - `includeViewZones?`: `boolean`
+- 描述：获取行顶部位置。
 
 
 ## getTopForPosition
+- 语法：`getTopForPosition(lineNumber, column): number`
+- 参数：
+  - `lineNumber`: `number`
+  - `column`: `number`
+- 描述：获取位置顶部位置。
 
 
 ## getValue
+- 语法：`getValue(options?): string`
+- 参数：`options:{ lineEnding: string; preserveBOM: boolean; }`
+- 返回值：`string`
+- 描述：获取编辑器值。
+<img src='/editor-getValue.png' />
 
 
 ## getVisibleColumnFromPosition
+- 语法：`getVisibleColumnFromPosition(position): number`
+- 参数：`position`: [IPosition](/api/IPosition.md)
+- 描述：获取位置的可见列。
 
 
 ## getVisibleRanges
+- 语法：`getVisibleRanges(): Range[]`
+- 返回值：[Range](/api/Range.md)[]
+- 描述：获取编辑器可见范围。
 
 
 ## handleInitialized
+- 语法：`handleInitialized(): void`
+- 描述：在设置模型、恢复视图状态和更新选项时调用,这是计算视口数据（如标记）的最佳位置。
 
 
 ## hasPendingScrollAnimation
+- 语法：`hasPendingScrollAnimation(): boolean`
+- 返回值：`boolean`
+- 描述：检查编辑器是否有滚动动画。
 
 
 ## hasTextFocus
+- 语法：`hasTextFocus(): boolean`
+- 返回值：`boolean`
+- 描述：如果此编辑器内的文本是聚焦的（即光标在闪烁），则返回true。
 
 
 ## hasWidgetFocus
+- 语法：`hasWidgetFocus(): boolean`
+- 返回值：`boolean`
+- 描述：如果此编辑器或编辑器小部件中的文本具有焦点，则返回true。
 
 
 ## layout
-
+- 语法：`layout(dimension?, postponeRendering?): void`
+- 参数：
+  - `dimension`: [IDimension](/api/editor/IDimension.md)
+  - `postponeRendering`: `boolean` 是否延迟渲染
+- 描述：调整编辑器布局，当编辑器的容器被调整大小时，应该调用这个方法。
+<img src='/layout.gif' />
 
 ## layoutContentWidget
+- 语法：`layoutContentWidget(widget: IContentWidget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：调整内容小部件布局。
+
 
 
 ## layoutGlyphMarginWidget
+- 语法：`layoutGlyphMarginWidget(widget: IGlyphMarginWidget): void`
+- 参数：`widget`: [IGlyphMarginWidget](/api/editor/IGlyphMarginWidget.md)
+- 描述：调整 glyph margin 小部件布局。
 
 
 ## layoutOverlayWidget
+- 语法：`layoutOverlayWidget(widget: IOverlayWidget): void`
+- 参数：`widget`: [IOverlayWidget](/api/editor/IOverlayWidget.md)
+- 描述：调整 overlay widget 小部件布局。
 
 
 ## popUndoStop
+- 语法：`popUndoStop(): void`
+- 描述：弹出撤消操作。
 
 
 ## pushUndoStop
+- 语法：`pushUndoStop(): void`
+- 描述：压入撤消操作。
 
 
 ## removeContentWidget
+- 语法：`removeContentWidget(widget: IContentWidget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：删除内容小部件。
 
 
 ## removeDecorations
+- 语法：`removeDecorations(decorationIds: string[]): void`
+- 参数：`decorationIds`: `string[]`
+- 描述：删除装饰。
 
 
 ## removeGlyphMarginWidget
+- 语法：`removeGlyphMarginWidget(widget: IGlyphMarginWidget): void`
+- 参数：`widget`: [IGlyphMarginWidget](/api/editor/IGlyphMarginWidget.md)
+- 描述：删除 glyph margin 小部件。
 
 
 ## removeOverlayWidget
+- 语法：`removeOverlayWidget(widget: IOverlayWidget): void`
+- 参数：`widget`: [IOverlayWidget](/api/editor/IOverlayWidget.md)
+- 描述：删除 overlay widget 小部件。
 
 
 ## render
+- 语法：`render(): void`
+- 描述：重新渲染编辑器，以便更新编辑器中的内容
 
 
 ## restoreViewState
+- 语法：`restoreViewState(state: ICodeEditorViewState): void`
+- 参数：`state`: [ICodeEditorViewState](/api/editor/ICodeEditorViewState.md)
+- 描述：恢复编辑器视图状态。
 
 
 ## revealLine
+- 语法：`revealLine(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示给定的行。（在 Ctrl F 搜索中，需要跨多行聚焦）
+<img src='/revealLine.gif' />
+
 
 
 ## revealLineInCenter
+- 语法：`revealLineInCenter(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示给定的行，并使其位于视图中心。
 
 
 ## revealLineInCenterIfOutsideViewport
+- 语法：`revealLineInCenterIfOutsideViewport(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示给定的行，并使其位于视图中心，如果行不在视图中，则将其移动到视图顶部。
 
 
 ## revealLineNearTop
+- 语法：`revealLineNearTop(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示给定的行，并使其位于视图顶部，如果行不在视图中，则将其移动到视图顶部。
 
 
 ## revealLines
+- 语法：`revealLines(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示指定的多行。
 
 
 ## revealLinesInCenter
+- 语法：`revealLinesInCenter(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示指定的多行，并使其位于视图中心。
 
 
 ## revealLinesInCenterIfOutsideViewport
+- 语法：`revealLinesInCenterIfOutsideViewport(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示指定的多行，并使其位于视图中心，如果行不在视图中，则将其移动到视图顶部。
 
 
 ## revealLinesNearTop
+- 语法：`revealLinesNearTop(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：在编辑器中显示指定的多行，并使其位于视图顶部，如果行不在视图中，则将其移动到视图顶部。
 
 
 ## revealPosition
+- 语法：`revealPosition(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示位置。
 
 
 ## revealPositionInCenter
+- 语法：`revealPositionInCenter(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示位置，并使其位于视图中心。
 
 
 ## revealPositionInCenterIfOutsideViewport
+- 语法：`revealPositionInCenterIfOutsideViewport(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示位置，并使其位于视图中心，如果位置不在视图中，则将其移动到视图顶部。
 
 
 ## revealPositionNearTop
+- 语法：`revealPositionNearTop(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示位置，并使其位于视图顶部，如果位置不在视图中，则将其移动到视图顶部。
 
 
 ## revealRange
+- 语法：`revealRange(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示范围。
 
 
 ## revealRangeAtTop
+- 语法：`revealRangeAtTop(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示范围，并使其位于视图顶部。
 
 
 ## revealRangeInCenter
+- 语法：`revealRangeInCenter(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示范围，并使其位于视图中心。
 
 
 ## revealRangeInCenterIfOutsideViewport
+- 语法：`revealRangeInCenterIfOutsideViewport(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示范围，并使其位于视图中心，如果范围不在视图中，则将其移动到视图顶部。
 
 
 ## revealRangeNearTop
+- 语法：`revealRangeNearTop(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示范围，并使其位于视图顶部，如果范围不在视图中，则将其移动到视图顶部。
 
 
 ## revealRangeNearTopIfOutsideViewport
+- 语法：`revealRangeNearTopIfOutsideViewport(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：根据需要垂直或水平滚动并显示范围，并使其位于视图顶部，如果范围不在视图中，则将其移动到视图顶部。
 
 
 ## saveViewState

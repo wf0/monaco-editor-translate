@@ -23,54 +23,8 @@ onMounted(() => {
     language: "javascript",
   });
 
-  // myEditor.changeViewZones((accessor) => {
-  //   accessor.addZone({
-  //     domNode: document.querySelector("#overlay"),
-  //     afterLineNumber: 0,
-  //     heightInPx: 100,
-  //     onDomNodeTop: (top) => {
-  //       document.querySelector("#overlay").style.top = top + "px";
-  //     },
-  //   });
-  // });
 
-  // const command = myEditor.addCommand(KeyMod.CtrlCmd | KeyCode.KeyM, () => {
-  //   console.log("command");
-  // });
-
-  // myEditor.executeCommand(null, {
-  //   getEditOperations(model, builder) {
-  //     console.log("getEditOperations", model, builder);
-  //   },
-  // });
-
-  // myEditor.executeEdits(null, [
-  //   {
-  //     text: "测试 executeEdits",
-  //     range: new monaco.Range(1, 1, 1, 1),
-  //   },
-  //   {
-  //     text: "测试 222",
-  //     range: new monaco.Range(1, 10, 1, 10),
-  //   },
-  // ]);
-
-  // myEditor.addAction({
-  //   id: "action",
-  //   label: "action",
-  //   contextMenuGroupId: "navigation",
-  //   keybindings: [KeyMod.CtrlCmd | KeyCode.KeyA],
-  //   run: () => {
-  //     console.log("action");
-  //   },
-  // });
-  // const action = myEditor.getAction("action");
-  // console.log(action);
-  // action.run();
-
-  // console.log(myEditor.getBottomForLineNumber(1));
-
-  // console.log(myEditor.getContainerDomNode());
+  window.editor = myEditor;
 });
 </script>
 
