@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a3 as t}from"./chunks/framework.B6VZG4DT.js";const g=JSON.parse('{"title":"KeyMod","description":"","frontmatter":{},"headers":[],"relativePath":"api/KeyMod.md","filePath":"api/KeyMod.md"}'),l={name:"api/KeyMod.md"},e=t("",15),n=[e];function h(r,k,d,p,o,c){return a(),i("div",null,n)}const m=s(l,[["render",h]]);export{g as __pageData,m as default};
