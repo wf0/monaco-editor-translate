@@ -6,12 +6,12 @@ hero:
   text: ""
   tagline: 相关文档整理,仅供学习使用
   image:
-      src: /bg.png
+      src: bg.png
       alt: 背景图
   actions:
     - theme: brand
       text: 快速开始
-      link: /api
+      link: api
 ---
 
 ::: danger ⛔ 写在前面

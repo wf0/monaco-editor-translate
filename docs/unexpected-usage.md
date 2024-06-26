@@ -3,7 +3,7 @@ layout: doc
 
 prev:
   text: '🔎 Monaco Editor API'
-  link: '/api#使用'
+  link: 'api#使用'
 
 next: false
 ---
