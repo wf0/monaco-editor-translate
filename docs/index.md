@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: 快速开始
       link: /api
-    # - theme: alt
-    #   text: 学习建议
-    #   link: /learn
 ---
 
 ::: danger ⛔ 写在前面

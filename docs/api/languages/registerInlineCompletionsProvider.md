@@ -8,7 +8,7 @@ https://microsoft.github.io/monaco-editor/docs.html#functions/languages.register
 
 - 参数：
   - `languageSelector`: [LanguageSelector](/api/languages/LanguageSelector.md)
-  - `provider`: [InlineCompletionsProvider](/api/languages/InlineCompletionsProvider.md)<[InlineCompletions](/api/languages/InlineCompletions.md)<[InlineCompletion](/api/laguages/InlineCompletion.md)>>
+  - `provider`: [InlineCompletionsProvider](/api/languages/InlineCompletionsProvider.md)<[InlineCompletions](/api/languages/InlineCompletions.md)<[InlineCompletion](/api/languages/InlineCompletion.md)>>
 
 - 返回值：[IDisposable](/api/IDisposable.md)
 

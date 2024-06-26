@@ -305,7 +305,7 @@ myEditor.changeViewZones((accessor) => {
 
 ## createContextKey
 - 语法：`createContextKey<T>(key, defaultValue): IContextKey<T>`
-- 泛型：`T extends` [ContextKeyValue](/api/editor/ContextKeyValue.md)  [ContextKeyValue](/api/editor/ContextKeyValue.md)
+- 泛型：`T extends` [ContextKeyValue](/api/editor/ContextKeyValue.md) = [ContextKeyValue](/api/editor/ContextKeyValue.md)
 - 参数：
   - `key`: `string`
   - `defaultValue`: `T`
@@ -441,7 +441,7 @@ action.run();
 ## getDecorationsInRange
 - 语法：`getDecorationsInRange(range): IModelDecoration[]`
 - 参数：`range`: [Range](/api/Range.md)
-- 返回值：[IModelDecoration]()[]
+- 返回值：[IModelDecoration](/api/editor/IModelDecoration.md)[]
 - 描述：获取装饰集合。
 
 
