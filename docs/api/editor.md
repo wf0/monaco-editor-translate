@@ -6,6 +6,43 @@ https://microsoft.github.io/monaco-editor/docs.html#modules/editor.html
 
     editor 是 Monaco Editor 的核心模块，提供了编辑器实例的创建、销毁、获取、设置等功能。
 
+## 快捷链接
+
+<script setup>
+const data=[
+  { icon: "F", link: "addCommand" },
+  { icon: "F", link: "addEditorAction" },
+  { icon: "F", link: "addKeybindingRule" },
+  { icon: "F", link: "addKeybindingRules" },
+  { icon: "F", link: "colorize" },
+  { icon: "F", link: "colorizeElement" },
+  { icon: "F", link: "colorizeModelLine" },
+  { icon: "F", link: "create" },
+  { icon: "F", link: "createDiffEditor" },
+  { icon: "F", link: "createModel" },
+  { icon: "F", link: "createMultiFileDiffEditor" },
+  { icon: "F", link: "createWebWorker" },
+  { icon: "F", link: "defineTheme" },
+  { icon: "F", link: "getDiffEditors" },
+  { icon: "F", link: "getEditors" },
+  { icon: "F", link: "getModel" },
+  { icon: "F", link: "getModelMarkers" },
+  { icon: "F", link: "getModels" },
+  { icon: "F", link: "registerCommand" },
+  { icon: "F", link: "registerEditorOpener" },
+  { icon: "F", link: "registerLinkOpener" },
+  { icon: "F", link: "remeasureFonts" },
+  { icon: "F", link: "removeAllMarkers" },
+  { icon: "F", link: "setModelLanguage" },
+  { icon: "F", link: "setModelMarkers" },
+  { icon: "F", link: "setTheme" },
+  { icon: "F", link: "tokenize" },
+];
+
+</script>
+
+<dataItems :data="data" />
+
 ## addCommand
 <!--@include: ./editor/addCommand.md{6,}-->
 

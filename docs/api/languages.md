@@ -6,6 +6,52 @@ https://microsoft.github.io/monaco-editor/docs.html#modules/languages.html
 
     languages 是语言服务模块，提供了常用的 javascript、typescript、css、html 等语言的语法高亮、代码提示、代码片段等功能。
 
+## 快捷链接
+
+<script setup>
+const data = [
+    { icon: "F", link: "getEncodedLanguageId" },
+    { icon: "F", link: "getLanguages" },
+    { icon: "F", link: "onLanguage" },
+    { icon: "F", link: "onLanguageEncountered" },
+    { icon: "F", link: "register" },
+    { icon: "F", link: "registerCodeActionProvider" },
+    { icon: "F", link: "registerCodeLensProvider" },
+    { icon: "F", link: "registerColorProvider" },
+    { icon: "F", link: "registerCompletionItemProvider" },
+    { icon: "F", link: "registerDeclarationProvider" },
+    { icon: "F", link: "registerDefinitionProvider" },
+    { icon: "F", link: "registerDocumentFormattingEditProvider" },
+    { icon: "F", link: "registerDocumentHighlightProvider" },
+    { icon: "F", link: "registerDocumentRangeFormattingEditProvider" },
+    { icon: "F", link: "registerDocumentRangeSemanticTokensProvider" },
+    { icon: "F", link: "registerDocumentSemanticTokensProvider" },
+    { icon: "F", link: "registerDocumentSymbolProvider" },
+    { icon: "F", link: "registerFoldingRangeProvider" },
+    { icon: "F", link: "registerHoverProvider" },
+    { icon: "F", link: "registerImplementationProvider" },
+    { icon: "F", link: "registerInlayHintsProvider" },
+    { icon: "F", link: "registerInlineCompletionsProvider" },
+    { icon: "F", link: "registerInlineEditProvider" },
+    { icon: "F", link: "registerLinkProvider" },
+    { icon: "F", link: "registerLinkedEditingRangeProvider" },
+    { icon: "F", link: "registerNewSymbolNameProvider" },
+    { icon: "F", link: "registerOnTypeFormattingEditProvider" },
+    { icon: "F", link: "registerReferenceProvider" },
+    { icon: "F", link: "registerRenameProvider" },
+    { icon: "F", link: "registerSelectionRangeProvider" },
+    { icon: "F", link: "registerSignatureHelpProvider" },
+    { icon: "F", link: "registerTokensProviderFactory" },
+    { icon: "F", link: "registerTypeDefinitionProvider" },
+    { icon: "F", link: "setColorMap" },
+    { icon: "F", link: "setLanguageConfiguration" },
+    { icon: "F", link: "setMonarchTokensProvider" },
+    { icon: "F", link: "setTokensProvider" },
+]
+</script>
+
+<dataItems :data="data" />
+
 ## getEncodedLanguageId
 <!--@include: ./languages/getEncodedLanguageId.md{6,}-->
 

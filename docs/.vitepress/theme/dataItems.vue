@@ -28,6 +28,7 @@ const { data } = defineProps({
 function getColor(t) {
   const map = {
     P: "#FF984D",
+    F: "#8060EC",
   };
   if (map[t]) return map[t];
 }
@@ -53,13 +54,13 @@ function patchURL(url) {
 }
 
 .data-item-box-item .icon {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid #eff0f3 1px;
+  border: solid #eff0f3 2px;
   border-radius: 50%;
 }
 .data-item-box-item .title {

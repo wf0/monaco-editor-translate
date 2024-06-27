@@ -8,6 +8,6 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     // 注册自定义全局组件
-    app.component("DataItem", dataItems);
+    app.component("DataItems", dataItems);
   },
 };
