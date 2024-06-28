@@ -1,6 +1,11 @@
 # MinimapSectionHeaderStyle
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#enums/editor.MinimapSectionHeaderStyle.html
 :::
-        
+
+## Normal
+- 值：`1`
+
+## Underlined
+- 值：`2`

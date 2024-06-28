@@ -6,7 +6,7 @@ https://microsoft.github.io/monaco-editor/docs.html
 
 ## 概述
 
-    Monaco Editor 是一个轻量级的代码编辑器，它基于 TypeScript 和 JavaScript，并且支持 VS Code 插件，是 VS code 的全功能代码编辑器。其支持语言包括：css、html、json、go、xml、javascript、typescript、markdown、python、c、c++、c#、php、sql 等 30 多种语言，支持代码diff模型对比、语法高亮、代码提示、格式化等功能，具有丰富的鼠标、光标交互事件，丰富的指令与菜单项，是绝大部分在线 WebIDE 项目的首选。
+    Monaco Editor 是一个轻量级的代码编辑器，其支持语言包括：css、html、json、go、xml、javascript、typescript、markdown、python、c、c++、c#、php、sql 等 30 多种语言，支持代码diff模型对比、语法高亮、代码提示、格式化等功能，具有丰富的鼠标、光标交互事件，丰富的指令与菜单项，是绝大部分在线 WebIDE 项目的首选。
 
 ::: tip 前往体验
 https://microsoft.github.io/monaco-editor/playground.html?source=v0.49.0

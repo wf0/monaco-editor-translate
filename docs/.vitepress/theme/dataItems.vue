@@ -9,7 +9,9 @@
       <span class="icon" :style="{ borderColor: getColor(item.icon) }">
         {{ item.icon }}
       </span>
-      <span class="title" :title="item.link"> {{ item.link }}</span>
+      <span class="title" :title="item.title || item.link">
+        {{ item.title || item.link }}
+      </span>
     </div>
   </div>
 </template>
