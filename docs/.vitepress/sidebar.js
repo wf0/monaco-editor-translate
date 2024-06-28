@@ -1,15 +1,15 @@
 // 左侧侧边栏目录
 // emoji 与ts文件映射
 const map = {
-  E: "🅱",
+  E: "🔶",
   N: "🆖",
-  I: "⚡",
-  C: "🎯",
-  T: "🅿",
+  I: "ℹ",
+  C: "🆑",
+  T: "🆚",
   V: "",
   F: "",
   P: "",
-  M: "✅",
+  M: "",
 };
 
 // editor 子目录结构
@@ -1390,11 +1390,11 @@ const languagesItems = [
 // worker 子目录结构
 const workerItems = [
   {
-    text: "IMirrorModel",
+    text: map.I + " IMirrorModel",
     link: "/api/worker/IMirrorModel",
   },
-  { text: "IMirrorTextModel", link: "/api/worker/IMirrorTextModel" },
-  { text: "IWorkerContext", link: "/api/worker/IWorkerContext" },
+  { text: map.I + " IMirrorTextModel", link: "/api/worker/IMirrorTextModel" },
+  { text: map.I + " IWorkerContext", link: "/api/worker/IWorkerContext" },
 ];
 
 // 根目录剩余结构

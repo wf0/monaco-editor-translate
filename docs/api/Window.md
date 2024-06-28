@@ -1,6 +1,14 @@
 # Window
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#interfaces/Window.html
 :::
-        
+
+```ts
+interface Window {
+    MonacoEnvironment?: Environment;
+}
+```
+
+## MonacoEnvironment
+- 类型：[Environment](/api/Environment.md)
