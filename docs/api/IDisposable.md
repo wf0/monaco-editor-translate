@@ -14,6 +14,3 @@ interface IDisposable {
 
 - 类型: `Function`
 - 描述：释放资源
-
-## 返回值
-- 类型：`void`
