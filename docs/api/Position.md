@@ -8,6 +8,34 @@ https://microsoft.github.io/monaco-editor/docs.html#classes/Position.html
 new Position(lineNumber, column): Position
 ```
 
+## 快捷链接
+
+<script setup>
+  const data = [
+    { icon: "C", link: "constructor" },
+    { icon: "P", link: "column" },
+    { icon: "P", link: "lineNumber" },
+    { icon: "M", link: "clone" },
+    { icon: "M", link: "delta" },
+    { icon: "M", link: "equals" },
+    { icon: "M", link: "isBefore" },
+    { icon: "M", link: "isBeforeOrEqual" },
+    { icon: "M", link: "toJSON" },
+    { icon: "M", link: "toString" },
+    { icon: "M", link: "with" },
+    { icon: "M", link: "compare" },
+    { icon: "M", link: "equals" },
+    { icon: "M", link: "isBefore" },
+    { icon: "M", link: "isBeforeOrEqual" },
+    { icon: "M", link: "isIPosition" },
+    { icon: "M", link: "lift" },
+];
+
+</script>
+
+<dataItems :data="data" />
+
+
 ## constructor
 - 类型：`new Position(lineNumber, column): Position`
 - 参数：

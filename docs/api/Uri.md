@@ -14,8 +14,34 @@ foo://example.com:8042/over/there?name=ferret#nose
       urn:example:animal:ferret:nose
 ```
 
+
+## 快捷链接
+<script setup>
+  const data = [
+  { icon: "C", link: "constructor" },
+  { icon: "P", link: "authority" },
+  { icon: "P", link: "fragment" },
+  { icon: "P", link: "path" },
+  { icon: "P", link: "query" },
+  { icon: "P", link: "scheme" },
+  { icon: "A", link: "fsPath" },
+  { icon: "M", link: "toJSON" },
+  { icon: "M", link: "toString" },
+  { icon: "M", link: "with" },
+  { icon: "M", link: "file" },
+  { icon: "M", link: "from" },
+  { icon: "M", link: "isUri" },
+  { icon: "M", link: "joinPath" },
+  { icon: "M", link: "parse" },
+  { icon: "M", link: "revive" },
+];
+
+</script>
+<dataItems :data="data" />
+
 ## Implements
 - [UriComponents](/api/UriComponents.md)
+
 
 ## constructor
 
@@ -58,16 +84,16 @@ host		=	255.255.255.255
 - 描述: fsPath是 http://www.example.com/some/path?query#fragment ==> /some/path
 
 ## toJSON
-- 类型: `() => `[UriComponents](/api/UriComponents.md)
+- 语法: `() => `[UriComponents](/api/UriComponents.md)
 - 描述: 将 Uri 转换为 JSON, 可快速获取 query、path等属性
 
 ## toString
-- 类型: `(skipEncoding?: boolean) => string`
+- 语法: `(skipEncoding?: boolean) => string`
 - 参数：`skipEncoding`: `是否对结果进行编码`
 - 描述: 将 Uri 转换为字符串
 
 ## with
-- 类型: `with(change): Uri`
+- 语法: `with(change): Uri`
 - 参数：
   - `authority`:`string`;
   - `fragment`:`string`;
@@ -77,7 +103,7 @@ host		=	255.255.255.255
 - 描述: 创建一个新的 Uri，使用提供的参数替换当前 Uri 的参数
 
 ## file
-- 类型：`file(path): Uri`
+- 语法：`file(path): Uri`
 - 参数：`path`:`string` 详见 [fsPath](/api/Uri.html#fspath);
 - 描述：创建一个文件 Uri
 - 示例：
@@ -93,31 +119,31 @@ bad.fragment === '/project1';
 ```
 
 ## from
-- 类型：`from(components, strict?): Uri`
+- 语法：`from(components, strict?): Uri`
 - 参数：
   - `components`:[UriComponents](/api/UriComponents.md);
   - `strict`:`boolean`;
 
 ## isUri
-- 类型：`isUri(thing): boolean`
+- 语法：`isUri(thing): boolean`
 - 参数：`thing`:`any`;
 - 描述：判断是否为 Uri
 
 ## joinPath
-- 类型：`joinPath(uri: Uri, ...pathFragment: string[]): Uri`
+- 语法：`joinPath(uri: Uri, ...pathFragment: string[]): Uri`
 - 参数：
   - `uri`:`Uri`;
   - `pathFragment`:`string[]`;
 - 描述：将多个路径片段拼接成一个 Uri
 
 ## parse
-- 类型：`revive(value: string, _strict?: boolean): Uri`
+- 语法：`revive(value: string, _strict?: boolean): Uri`
 - 参数：
   - `value`:`string`;
   - `_strict`:`boolean`;
 - 描述：将字符串解析为 Uri
 
 ## revive
-- 类型：`revive(data): Uri`
+- 语法：`revive(data): Uri`
 - 参数：`data`:` Uri | UriComponents`;
 - 描述：将 UriComponents 转换为 Uri

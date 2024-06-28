@@ -29,6 +29,9 @@ function getColor(t) {
   const map = {
     P: "#FF984D",
     F: "#8060EC",
+    M: "#FD6AC4",
+    A: "#FB8081",
+    C: "#4D7FFF",
   };
   if (map[t]) return map[t];
 }
@@ -56,6 +59,7 @@ function patchURL(url) {
 .data-item-box-item .icon {
   height: 20px;
   width: 20px;
+  font-size: 12px;
   margin-right: 10px;
   display: flex;
   justify-content: center;

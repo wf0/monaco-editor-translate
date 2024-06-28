@@ -8,7 +8,7 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { editor, languages, KeyCode, Position } from "monaco-editor";
+import { editor, languages, KeyCode, Range } from "monaco-editor";
 import * as monaco from "monaco-editor";
 import { useFixError } from "../utils/useFixError";
 import { KeyMod } from "monaco-editor";
@@ -23,38 +23,12 @@ onMounted(() => {
     language: "javascript",
   });
 
-  window.editor = myEditor;
-
-  myEditor.onContextMenu(({ event, target }) => {
-    console.log(event, target);
-  });
-
-  myEditor.onDidAttemptReadOnlyEdit(() => {
-    console.log("onDidAttemptReadOnlyEdit");
-  });
-
-  // myEditor.onDidChangeConfiguration((e) => {
-  //   console.log("onDidChangeConfiguration", e);
-  // });
-
-  // myEditor.updateOptions({
-  //   theme:"vs-dark"
-  // })
-
-  // myEditor.onDidChangeCursorPosition((e) => {
-  //   console.log("onDidChangeCursorPosition", e);
-  // });
-
-  // myEditor.onDidChangeCursorSelection((e) => {
-  //   console.log("onDidChangeCursorSelection", e);
-  // });
-
-  myEditor.onDidChangeModel((e) => {
-    console.log("onDidChangeModel", e);
-  });
-  myEditor.onDidChangeModelContent((e) => {
-    console.log("onDidChangeModelContent", e);
-  });
+  const range = new Range(1, 0, 1, 6);
+  const newRange = range.delta(3);
+  console.group("Range.delta");
+  console.log(range);
+  console.log("执行 range.delta(3)");
+  console.log(newRange);
 });
 </script>
 
