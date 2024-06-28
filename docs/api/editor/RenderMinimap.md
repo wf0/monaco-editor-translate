@@ -1,6 +1,12 @@
 # RenderMinimap
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#enums/editor.RenderMinimap.html
 :::
-        
+
+## Blocks
+- 值：`2`
+## None
+- 值：`0`
+## Text
+- 值：`1`
