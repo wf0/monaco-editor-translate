@@ -16,10 +16,10 @@
 
 ## 特性
 
+- 附加DEMO：特定API还增加样例及截图，使得用户更清晰了解API的使用；
 - 贴合官网：采用原生目录接口进行编写，保持与官网一致的目录结构；
-- API示例：特定API还增加样例及截图，使得用户更清晰了解API的使用；
+- 文档全面：全文共计`500+`篇文章，涵盖全部API；
 - 版本最新：翻译目前最新版本 `V0.49.0`；
-- 附加DEMO：针对难点，书写了相关DEMO，使得更快了解其含义。
 
 ## 相关截图
 
@@ -33,5 +33,5 @@
 
 1. github地址：https://github.com/wf0/monaco-editor-translate
 2. gitee地主：https://gitee.com/wfeng0/monaco-editor-translate
-3. 如果发现文档存在错误，欢迎提交 PR 或 Issue
+3. 如果发现文档存在错误，欢迎提交 PR 或 Issue，亦或直接点击页面 `在 GitHub 上编辑此页面` ，前往提交。
 4. 欢迎加入QQ群，一起交流

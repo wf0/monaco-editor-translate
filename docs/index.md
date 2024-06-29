@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Monaco Editor 译文"
   text: ""
-  tagline: 相关文档整理,仅供学习使用
+  tagline: 相关文档整理翻译，仅供学习使用
   image:
       src: bg.png
       alt: 背景图

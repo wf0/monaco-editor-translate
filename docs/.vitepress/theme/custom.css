@@ -1,8 +1,19 @@
 /* .vitepress/theme/custom.css */
 :root {
+  --vp-c-brand: #0076fc;
   --vp-c-brand-1: #0076fc;
   --vp-c-brand-2: #0076fc;
   --vp-c-indigo-3: #0076fc;
+  --vp-c-brand-next: #F2F4FF;
+  /* 按钮颜色 */
+  --vp-button-brand-bg: var(--vp-c-brand);
+  /* 首页标题和图片渐变颜色 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    var(--vp-c-brand) 45%,
+    var(--vp-c-brand-next)
+  );
+  --vp-home-hero-image-filter: blur(100px);
 }
 /* 换行 */
 .VPDoc .container > .content * {
