@@ -34,11 +34,15 @@ function getColor(t) {
     M: "#FD6AC4",
     A: "#FB8081",
     C: "#4D7FFF",
+    I: "#38944A",
+    T: "#DD4D94",
+    V: "#7487EF",
   };
   if (map[t]) return map[t];
 }
 function patchURL(url) {
-  window.location.hash = url.toLowerCase();
+  if (url.split(".").length > 1) window.location.href = url;
+  else window.location.hash = url.toLowerCase();
 }
 </script>
 
