@@ -404,7 +404,7 @@ const data = [
 
 ## getDecorationsInRange
 - 语法：`getDecorationsInRange(range): IModelDecoration[]`
-- 参数：`range`: [IRange](/api/editor/IRange.md)
+- 参数：`range`: [Range](/api/Range.md)
 - 返回值：`IModelDecoration`:[IModelDecoration](/api/editor/IModelDecoration.md)[]
 - 描述：获取装饰集合。
 

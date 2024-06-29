@@ -22,6 +22,6 @@ interface Options {
 
 
 ## suggest
-- 类型：[CompletionConfiguration](/api/languages/CompletionConfiguration.md)
+- 类型：[CompletionConfiguration](/api/languages/html/CompletionConfiguration.md)
 - 描述：配置HTML语言服务代码补全选项。
 

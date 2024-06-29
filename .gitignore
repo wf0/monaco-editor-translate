@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 # 需要将dist 打包结果托管 GitHub pages
 dist
+cache
 .temp
 .cache-loader
 dist-ssr
