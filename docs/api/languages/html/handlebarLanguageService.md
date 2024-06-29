@@ -1,6 +1,10 @@
 # handlebarLanguageService
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#variables/languages.html.handlebarLanguageService.html
 :::
-        
+
+```ts
+handlebarLanguageService: LanguageServiceRegistration
+```
+[LanguageServiceRegistration](/api/languages/html/LanguageServiceRegistration.md)
