@@ -32,6 +32,6 @@
 ## Monaco Editor 共创计划
 
 1. github地址：https://github.com/wf0/monaco-editor-translate
-2. gitee地主：https://gitee.com/wfeng0/monaco-editor-translate
+2. gitee地址：https://gitee.com/wfeng0/monaco-editor-translate
 3. 如果发现文档存在错误，欢迎提交 PR 或 Issue，亦或直接点击页面 `在 GitHub 上编辑此页面` ，前往提交。
 4. 欢迎加入QQ群，一起交流
