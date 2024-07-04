@@ -530,242 +530,532 @@ const data = [
 
 
 ## getTopForLineNumber
-
+- 语法：`getTopForLineNumber(lineNumber, includeViewZones?): number`
+- 参数：
+  - `lineNumber`: `number`
+  - `includeViewZones`: `boolean`
+- 描述：获取直线顶部相对于第一条直线的垂直位置（顶部偏移）。
 
 
 ## getTopForPosition
+- 语法：`getTopForPosition(lineNumber, column): number`
+- 参数：
+  - `lineNumber`: `number`
+  - `column`: `number`
+- 描述：获取位置顶部相对于第一条直线的垂直位置（顶部偏移）。
 
 
 ## getValue
+- 语法：`getValue(options?): string`
+- 参数：`options`: `{ eol?: boolean; preserveFocus?: boolean; lineFeedUnix?: boolean; }`
+- 描述：获取编辑器值。
 
 
 ## getVisibleColumnFromPosition
+- 语法：`getVisibleColumnFromPosition(position): number`
+- 参数：`position`: [IPosition](/api/IPosition.md)
+- 描述：获取位置可见列。
 
 
 ## getVisibleRanges
+- 语法：`getVisibleRanges(): Range[]`
+- 返回值：`Range`:[Range](/api/Range.md)[]
+- 描述：获取可见范围。
+
 
 
 ## handleInitialized
+- 语法：`handleInitialized(): void`
+- 描述：在设置模型、恢复视图状态和更新选项时调用,这是计算视口数据（如标记）的最佳位置。
 
 
 ## hasPendingScrollAnimation
+- 语法：`hasPendingScrollAnimation(): boolean`
+- 描述：检查是否有滚动动画。
 
 
 ## hasTextFocus
+- 语法：`hasTextFocus(): boolean`
+- 描述：检查编辑器是否具有焦点。
 
 
 ## hasWidgetFocus
+- 语法：`hasWidgetFocus(): boolean`
+- 描述：如果此编辑器或编辑器小部件中的文本具有焦点，则返回true。
 
 
 ## layout
+- 语法：`layout(dimension?, postponeRendering?): void`
+- 参数：
+  - `dimension`: [IDimension](/api/editor/IDimension.md)
+  - `postponeRendering`: `boolean` 是否延迟渲染
+- 描述：重新渲染编辑器。
 
 
 ## layoutContentWidget
+- 语法：`layoutContentWidget(widget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：重新渲染内容小部件。
 
 
 ## layoutGlyphMarginWidget
+- 语法：`layoutGlyphMarginWidget(widget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：重新渲染 glyph margin 小部件。
 
 
 ## layoutOverlayWidget
+- 语法：`layoutOverlayWidget(widget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：重新渲染 overlay widget。
 
 
 ## popUndoStop
+- 语法：`popUndoStop(): void`
+- 描述：弹出撤消操作。
 
 
 ## pushUndoStop
+- 语法：`pushUndoStop(): void`
+- 描述：压入撤消操作。
 
 
 ## removeContentWidget
+- 语法：`removeContentWidget(widget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：删除内容小部件。
 
 
 ## removeDecorations
+- 语法：`removeDecorations(decorationIds): void`
+- 参数：`decorationIds`: `string[]`
+- 描述：删除装饰。
 
 
 ## removeGlyphMarginWidget
+- 语法：`removeGlyphMarginWidget(widget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：删除 glyph margin 小部件。
 
 
 ## removeOverlayWidget
+- 语法：`removeOverlayWidget(widget): void`
+- 参数：`widget`: [IContentWidget](/api/editor/IContentWidget.md)
+- 描述：删除 overlay widget。
 
 
 ## render
+- 语法：`render(forceRedraw?): void`
+- 参数：`forceRedraw`: `boolean`
+- 描述：强制渲染编辑器。
 
 
 ## restoreViewState
+- 语法：`restoreViewState(state): void`
+- 参数：`state`: [ICodeEditorViewState](/api/editor/ICodeEditorViewState.md)
+- 描述：恢复视图状态。
 
 
 ## revealLine
+- 语法：`revealLine(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行。
 
 
 ## revealLineInCenter
+- 语法：`revealLineInCenter(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行，并使其位于视图中心。
 
 
 ## revealLineInCenterIfOutsideViewport
+- 语法：`revealLineInCenterIfOutsideViewport(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行，并使其位于视图中心，如果行不在视图中，则不滚动。
 
 
 ## revealLineNearTop
+- 语法：`revealLineNearTop(lineNumber, scrollType?): void`
+- 参数：
+  - `lineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行，并使其位于视图顶部。
 
 
 ## revealLines
+- 语法：`revealLines(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行。
 
 
 ## revealLinesInCenter
+- 语法：`revealLinesInCenter(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行，并使其位于视图中心。
 
 
 ## revealLinesInCenterIfOutsideViewport
+- 语法：`revealLinesInCenterIfOutsideViewport(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行，并使其位于视图中心，如果行不在视图中，则不滚动。
 
 
 ## revealLinesNearTop
+- 语法：`revealLinesNearTop(startLineNumber, endLineNumber, scrollType?): void`
+- 参数：
+  - `startLineNumber`: `number`
+  - `endLineNumber`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定行，并使其位于视图顶部。
 
 
 ## revealPosition
+- 语法：`revealPosition(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定位置。
 
 
 ## revealPositionInCenter
+- 语法：`revealPositionInCenter(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定位置，并使其位于视图中心。
 
 
 ## revealPositionInCenterIfOutsideViewport
+- 语法：`revealPositionInCenterIfOutsideViewport(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定位置，并使其位于视图中心，如果位置不在视图中，则不滚动。
 
 
 ## revealPositionNearTop
+- 语法：`revealPositionNearTop(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定位置，并使其位于视图顶部。
 
 
 ## revealRange
+- 语法：`revealRange(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)`
+- 描述：将编辑器滚动到指定范围。
 
 
 ## revealRangeAtTop
+- 语法：`revealRangeAtTop(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定范围，并使其位于视图顶部。
 
 
 ## revealRangeInCenter
+- 语法：`revealRangeInCenter(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定范围，并使其位于视图中心。
 
 
 ## revealRangeInCenterIfOutsideViewport
+- 语法：`revealRangeInCenterIfOutsideViewport(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定范围，并使其位于视图中心，如果范围不在视图中，则不滚动。
 
 
 ## revealRangeNearTop
+- 语法：`revealRangeNearTop(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定范围，并使其位于视图顶部。
 
 
 ## revealRangeNearTopIfOutsideViewport
+- 语法：`revealRangeNearTopIfOutsideViewport(range, scrollType?): void`
+- 参数：
+  - `range`: [IRange](/api/IRange.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：将编辑器滚动到指定范围，并使其位于视图顶部，如果范围不在视图中，则不滚动。
 
 
 ## saveViewState
+- 语法：`saveViewState(): ICodeEditorViewState`
+- 返回值：[ICodeEditorViewState](/api/editor/ICodeEditorViewState.md)
+- 描述：保存编辑器的视图状态。
 
 
 ## setBanner
+- 语法：`setBanner(bannerDomNode, height): void`
+- 参数：
+  - `bannerDomNode`: `HTMLElement`
+  - `height`: `number`
+- 描述：设置编辑器的横幅。
 
 
 ## setModel
+- 语法：`setModel(model): void`
+- 参数：`model`: [ITextModel](/api/editor/ITextModel.md)
+- 描述：设置编辑器的模型。
 
 
 ## setPosition
+- 语法：`setPosition(position, source?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `source`: `string`
+- 描述：设置编辑器的位置。
 
 
 ## setScrollLeft
+- 语法：`setScrollLeft(newScrollLeft, scrollType?): void`
+- 参数：
+  - `newScrollLeft`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：设置编辑器的水平滚动位置。
 
 
 ## setScrollPosition
+- 语法：`setScrollPosition(position, scrollType?): void`
+- 参数：
+  - `position`: [IPosition](/api/IPosition.md)
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：设置编辑器的滚动位置。
 
 
 ## setScrollTop
+- 语法：`setScrollTop(newScrollTop, scrollType?): void`
+- 参数：
+  - `newScrollTop`: `number`
+  - `scrollType`: [ScrollType](/api/editor/ScrollType.md)
+- 描述：设置编辑器的垂直滚动位置。
 
 
 ## setSelection
+- 语法：`setSelection(selection, source?): void`
+- 参数：
+  - `selection`: [ISelection](/api/ISelection.md)
+  - `source`: `string`
+- 描述：设置编辑器的选择。
 
 
 ## setSelections
+- 语法：`setSelections(selections, source?): void`
+- 参数：
+  - `selections`: [ISelection](/api/ISelection.md)[]
+  - `source`: `string`
+- 描述：设置编辑器的选择。
 
 
 ## setValue
+- 语法：`setValue(newValue): void`
+- 参数：`newValue`: `string`
+- 描述：设置编辑器的值。
 
 
 ## trigger
+- 语法：`trigger(source, handlerId, payload): void`
+- 参数：
+  - `source`: `string`
+  - `handlerId`: `string`
+  - `payload`: `any`
+- 描述：触发编辑器事件。
 
 
 ## updateOptions
+- 语法：`updateOptions(newOptions): void`
+- 参数：`newOptions`: [IEditorOptions](/api/editor/IEditorOptions.md)
+- 描述：更新编辑器的选项。
 
 
 ## writeScreenReaderContent
+- 语法：`writeScreenReaderContent(reason): void`
+- 参数：`reason`: `string`
+- 描述：将编辑器的内容写入屏幕阅读器。
 
 
 ## onContextMenu
+- 类型：`onContextMenu: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：编辑器上下文菜单事件。
 
 
 ## onDidAttemptReadOnlyEdit
+- 类型：`onDidAttemptReadOnlyEdit: IEvent<void>`
+- 描述：编辑器尝试只读编辑事件。
 
 
 ## onDidBlurEditorText
+- 类型：`onDidBlurEditorText: IEvent<void>`
+- 描述：编辑器失去焦点事件。
 
 
 ## onDidBlurEditorWidget
+- 类型：`onDidBlurEditorWidget: IEvent<void>`
+- 描述：当此编辑器或编辑器小部件内的文本失去焦点时发出的事件。
 
 
 ## onDidChangeConfiguration
+- 类型：`onDidChangeConfiguration: IEvent<ConfigurationChangedEvent>`
+- 参数：[ConfigurationChangedEvent](/api/editor/ConfigurationChangedEvent.md)
+- 描述：编辑器配置更改事件。
 
 
 ## onDidChangeCursorPosition
+- 类型：`onDidChangeCursorPosition: IEvent<ICursorPositionChangedEvent>`
+- 参数：[ICursorPositionChangedEvent](/api/editor/ICursorPositionChangedEvent.md)
+- 描述：编辑器光标位置更改事件。
 
 
 ## onDidChangeCursorSelection
+- 类型：`onDidChangeCursorSelection: IEvent<ICursorSelectionChangedEvent>`
+- 参数：[ICursorSelectionChangedEvent](/api/editor/ICursorSelectionChangedEvent.md)
+- 描述：编辑器光标选择更改事件。
 
 
 ## onDidChangeHiddenAreas
+- 类型：`onDidChangeHiddenAreas: IEvent<void>`
+- 描述：编辑器隐藏区域更改事件。
 
 
 ## onDidChangeModel
+- 类型：`onDidChangeModel: IEvent<IModelChangedEvent>`
+- 参数：[IModelChangedEvent](/api/editor/IModelChangedEvent.md)
+- 描述：编辑器模型更改事件。
 
 
 ## onDidChangeModelContent
+- 类型：`onDidChangeModelContent: IEvent<IModelContentChangedEvent>`
+- 参数：[IModelContentChangedEvent](/api/editor/IModelContentChangedEvent.md)
+- 描述：编辑器模型内容更改事件。
 
 
 ## onDidChangeModelDecorations
+- 类型：`onDidChangeModelDecorations: IEvent<IModelDecorationsChangedEvent>`
+- 参数：[IModelDecorationsChangedEvent](/api/editor/IModelDecorationsChangedEvent.md)
+- 描述：编辑器模型装饰更改事件。
 
 
 ## onDidChangeModelLanguage
+- 类型：`onDidChangeModelLanguage: IEvent<IModelLanguageChangedEvent>`
+- 参数：[IModelLanguageChangedEvent](/api/editor/IModelLanguageChangedEvent.md)
+- 描述：编辑器模型语言更改事件。
 
 
 ## onDidChangeModelLanguageConfiguration
+- 类型：`onDidChangeModelLanguageConfiguration: IEvent<IModelLanguageConfigurationChangedEvent>`
+- 参数：[IModelLanguageConfigurationChangedEvent](/api/editor/IModelLanguageConfigurationChangedEvent.md)
+- 描述：编辑器模型语言配置更改事件。
 
 
 ## onDidChangeModelOptions
+- 类型：`onDidChangeModelOptions: IEvent<IModelOptionsChangedEvent>`
+- 参数：[IModelOptionsChangedEvent](/api/editor/IModelOptionsChangedEvent.md)
+- 描述：编辑器模型选项更改事件。
 
 
 ## onDidContentSizeChange
+- 类型：`onDidContentSizeChange: IEvent<IContentSizeChangedEvent>`
+- 参数：[IContentSizeChangedEvent](/api/editor/IContentSizeChangedEvent.md)
+- 描述：当编辑器中的内容宽度或内容高度发生更改时发出的事件。
 
 
 ## onDidFocusEditorText
+- 类型：`onDidFocusEditorText: IEvent<void>`
+- 描述：编辑器获得焦点事件。
 
 
 ## onDidFocusEditorWidget
+- 类型：`onDidFocusEditorWidget: IEvent<void>`
+- 描述：当此编辑器或编辑器小部件内的文本获得焦点时发出的事件。
 
 
 ## onDidLayoutChange
+- 类型：`onDidLayoutChange: IEvent<EditorLayoutInfo>`
+- 参数：[EditorLayoutInfo](/api/editor/EditorLayoutInfo.md)
+- 描述：编辑器布局更改事件。
 
 
 ## onDidPaste
+- 类型：`onDidPaste: IEvent<IPasteEvent>`
+- 参数：[IPasteEvent](/api/editor/IPasteEvent.md)
+- 描述：编辑器粘贴事件。
 
 
 ## onDidScrollChange
+- 类型：`onDidScrollChange: IEvent<IScrollEvent>`
+- 参数：[IScrollEvent](/api/editor/IScrollEvent.md)
+- 描述：编辑器滚动更改事件。
 
 
 ## onKeyDown
+- 类型：`onKeyDown: IEvent<IKeyboardEvent>`
+- 参数：[IKeyboardEvent](/api/editor/IKeyboardEvent.md)
+- 描述：编辑器按键按下事件。
 
 
 ## onKeyUp
+- 类型：`onKeyUp: IEvent<IKeyboardEvent>`
+- 参数：[IKeyboardEvent](/api/editor/IKeyboardEvent.md)
+- 描述：编辑器按键抬起事件。
 
 
 ## onMouseDown
+- 类型：`onMouseDown: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：编辑器鼠标按下事件。
 
 
 ## onMouseLeave
+- 类型：`onMouseLeave: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：编辑器鼠标离开事件。
 
 
 ## onMouseMove
+- 类型：`onMouseMove: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：编辑器鼠标移动事件。
 
 
 ## onMouseUp
+- 类型：`onMouseUp: IEvent<IEditorMouseEvent>`
+- 参数：[IEditorMouseEvent](/api/editor/IEditorMouseEvent.md)
+- 描述：编辑器鼠标抬起事件。
 
 
 ## onWillChangeModel
+- 类型：`onWillChangeModel: IEvent<IModelChangedEvent>`
+- 参数：[IModelChangedEvent](/api/editor/IModelChangedEvent.md)
+- 描述：编辑器模型即将更改事件。
 
 
 ## onDidDispose
+- 类型：`onDidDispose: IEvent<void>`
+- 描述：编辑器即将销毁事件。
 
