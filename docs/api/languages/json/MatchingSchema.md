@@ -10,3 +10,8 @@ interface MatchingSchema {
     schema: JSONSchema;
 }
 ```
+
+## node
+- 类型：[ASTNode](/api/languages/json/ASTNode.md)
+## schema
+- 类型：[JSONSchema](/api/languages/json/JSONSchema.md)
