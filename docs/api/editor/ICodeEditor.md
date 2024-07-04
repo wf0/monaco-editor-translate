@@ -1009,19 +1009,19 @@ const data = [
 
 ## onDidScrollChange
 - 类型：`onDidScrollChange: IEvent<IScrollEvent>`
-- 参数：[IScrollEvent](/api/editor/IScrollEvent.md)
+- 参数：[IScrollEvent](/api/IScrollEvent.md)
 - 描述：编辑器滚动更改事件。
 
 
 ## onKeyDown
 - 类型：`onKeyDown: IEvent<IKeyboardEvent>`
-- 参数：[IKeyboardEvent](/api/editor/IKeyboardEvent.md)
+- 参数：[IKeyboardEvent](/api/IKeyboardEvent.md)
 - 描述：编辑器按键按下事件。
 
 
 ## onKeyUp
 - 类型：`onKeyUp: IEvent<IKeyboardEvent>`
-- 参数：[IKeyboardEvent](/api/editor/IKeyboardEvent.md)
+- 参数：[IKeyboardEvent](/api/IKeyboardEvent.md)
 - 描述：编辑器按键抬起事件。
 
 
