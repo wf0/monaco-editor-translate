@@ -37,6 +37,7 @@ function getColor(t) {
     I: "#38944A",
     T: "#DD4D94",
     V: "#7487EF",
+    E: "#9D9251",
   };
   if (map[t]) return map[t];
 }
