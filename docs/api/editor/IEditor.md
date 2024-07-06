@@ -329,7 +329,7 @@ const date = [
 
 ## saveViewState
 - 语法：`saveViewState(): IEditorViewState`
-- 返回值：[IEditorViewState](/api/IEditorViewState.md)
+- 返回值：[IEditorViewState](/api/editor/IEditorViewState.md)
 - 描述：保存编辑器的视图状态。
 
 

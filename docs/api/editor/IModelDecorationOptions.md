@@ -131,12 +131,12 @@ const data = [
 
 
 ## glyphMarginHoverMessage
-- 类型：[IMarkdownString](/api/editor/IMarkdownString.md) | [IMarkdownString](/api/editor/IMarkdownString.md)[]
+- 类型：[IMarkdownString](/api/IMarkdownString.md) | [IMarkdownString](/api/IMarkdownString.md)[]
 - 描述：将鼠标悬停在图示符边距装饰上时要呈现的消息。
 
 
 ## hoverMessage
-- 类型：[IMarkdownString](/api/editor/IMarkdownString.md) | [IMarkdownString](/api/editor/IMarkdownString.md)[]
+- 类型：[IMarkdownString](/api/IMarkdownString.md) | [IMarkdownString](/api/IMarkdownString.md)[]
 - 描述：要渲染为装饰消息的MarkdownString数组。
 
 
@@ -161,7 +161,7 @@ const data = [
 
 
 ## lineNumberHoverMessage
-- 类型：[IMarkdownString](/api/editor/IMarkdownString.md) | [IMarkdownString](/api/editor/IMarkdownString.md)[]
+- 类型：[IMarkdownString](/api/IMarkdownString.md) | [IMarkdownString](/api/IMarkdownString.md)[]
 - 描述：MarkdownString的数组，以呈现为行号消息。
 
 
