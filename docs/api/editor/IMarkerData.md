@@ -22,3 +22,30 @@ interface IMarkerData {
     tags?: MarkerTag[];
 }
 ```
+
+## code
+- 类型：`string | { target: Uri; value: string; }`
+  - `target`: [Uri](/api/Uri.md)
+  - `value`: `string`
+
+## endColumn
+- 类型：`number`
+## endLineNumber
+- 类型：`number`
+## message
+- 类型：`string`
+## modelVersionId
+- 类型：`number`
+## relatedInformation
+- 类型：[IRelatedInformation](/api/editor/IRelatedInformation.md)[]
+## severity
+- 类型：[MarkerSeverity](/api/MarkerSeverity.md)
+
+## source
+- 类型：`string`
+## startColumn
+- 类型：`number`
+## startLineNumber
+- 类型：`number`
+## tags
+- 类型：[MarkerTag](/api/MarkerTag.md)[]
