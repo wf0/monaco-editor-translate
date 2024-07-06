@@ -928,7 +928,7 @@ const data = [
 - 描述：启用代码段建议。
 
 
-stickyScroll
+## stickyScroll
 - 类型: [IEditorStickyScrollOptions](/api/editor/IEditorStickyScrollOptions.md)
 - 描述：控制粘性滚动选项的行为
 
