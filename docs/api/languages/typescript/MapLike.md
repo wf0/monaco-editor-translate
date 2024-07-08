@@ -1,6 +1,11 @@
 # MapLike
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#interfaces/languages.typescript.MapLike.html
 :::
-        
+
+```ts
+interface MapLike<T> {
+    [index: string]: T;
+}
+```

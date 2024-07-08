@@ -1,6 +1,11 @@
 # typescriptDefaults
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#variables/languages.typescript.typescriptDefaults.html
 :::
-        
+
+```ts
+typescriptDefaults: languages.typescript.LanguageServiceDefaults
+```
+
+[languages.typescript.LanguageServiceDefaults](/api/languages/typescript/LanguageServiceDefaults.md)
