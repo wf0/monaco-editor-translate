@@ -1,6 +1,11 @@
 # InlineEditTriggerKind
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#enums/languages.InlineEditTriggerKind.html
 :::
-        
+
+## Automatic
+- 值：`1`
+
+## Invoke
+- 值：`0`

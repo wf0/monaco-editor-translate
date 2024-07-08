@@ -22,4 +22,4 @@ interface DiagnosticMessageChain {
 ## messageText
 - 类型：`string`
 ## next
-- 类型：[DiagnosticMessageChain](/api/languages/tyescript/DiagnosticMessageChain.md)[]
+- 类型：[DiagnosticMessageChain](#)[]
