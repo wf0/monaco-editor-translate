@@ -209,7 +209,7 @@ const data = [
 - 语法：`findNextMatch(searchString, searchStart, isRegex, matchCase, wordSeparators, captureMatches): FindMatch`
 - 参数：
   - `searchString`: `string` 用于搜索的字符串。如果是正则表达式，请将isRegex设置为true。
-  - `searchStart`: [Position](/api/editor/Position.md) 搜索的起始位置。
+  - `searchStart`: [Position](/api/Position.md) 搜索的起始位置。
   - `isRegex`: `boolean` 如果为true，则搜索字符串将视为正则表达式。
   - `matchCase`: `boolean` 如果为true，则搜索字符串将区分大小写。
   - `wordSeparators`: `string` 用于搜索的单词分隔符。
@@ -222,7 +222,7 @@ const data = [
 - 语法：`findPreviousMatch(searchString, searchStart, isRegex, matchCase, wordSeparators, captureMatches): FindMatch`
 - 参数：
   - `searchString`: `string` 用于搜索的字符串。如果是正则表达式，请将isRegex设置为true。
-  - `searchStart`: [Position](/api/editor/Position.md) 搜索的起始位置。
+  - `searchStart`: [Position](/api/Position.md) 搜索的起始位置。
   - `isRegex`: `boolean` 如果为true，则搜索字符串将视为正则表达式。
   - `matchCase`: `boolean` 如果为true，则搜索字符串将区分大小写。
   - `wordSeparators`: `string` 用于搜索的单词分隔符。
@@ -389,8 +389,8 @@ const data = [
 
 
 ## getOptions
-- 语法：`getOptions(): ITextModelResolvedOptions`
-- 返回值: [ITextModelResolvedOptions](/api/editor/ITextModelResolvedOptions.md)
+- 语法：`getOptions(): TextModelResolvedOptions`
+- 返回值: [TextModelResolvedOptions](/api/editor/TextModelResolvedOptions.md)
 - 描述：获取模型的选项。
 
 

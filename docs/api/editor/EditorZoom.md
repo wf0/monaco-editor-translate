@@ -13,7 +13,7 @@ interface IEditorZoom {
 ```
 
 ## onDidChangeZoomLevel
-- 类型：[IEvent](/api/editor/IEvent.md)`<number>`
+- 类型：[IEvent](/api/IEvent.md)`<number>`
 
 ## getZoomLevel
 - 语法：`getZoomLevel(): number`
