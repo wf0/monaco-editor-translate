@@ -1,6 +1,12 @@
 # EditorType
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#variables/editor.EditorType.html
 :::
-        
+
+```ts
+EditorType: {
+    ICodeEditor: string;
+    IDiffEditor: string;
+}
+```
