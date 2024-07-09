@@ -16,3 +16,20 @@ interface ILanguageExtensionPoint {
     mimetypes?: string[];
 }
 ```
+
+## aliases
+- 类型：`string[]`
+## configuration
+- 类型：[Uri](/api/Uri.md)
+## extensions
+- 类型：`string[]`
+## filenamePatterns
+- 类型：`string[]`
+## filenames
+- 类型：`string[]`
+## firstLine
+- 类型：`string`
+## id
+- 类型：`string`
+## mimetypes
+- 类型：`string[]`
