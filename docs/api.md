@@ -4,6 +4,8 @@
 https://microsoft.github.io/monaco-editor/docs.html
 :::
 
+<backTop/>
+
 ## 概述
 
     Monaco Editor 是一个轻量级的代码编辑器，其支持语言包括：css、html、json、go、xml、javascript、typescript、markdown、python、c、c++、c#、php、sql 等 30 多种语言，支持代码diff模型对比、语法高亮、代码提示、格式化等功能，具有丰富的鼠标、光标交互事件，丰富的指令与菜单项，是绝大部分在线 WebIDE 项目的首选。
