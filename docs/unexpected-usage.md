@@ -10,6 +10,8 @@ next: false
 
 # 解决 Uncaught Error: Unexpected usage 报错
 
+<backTop/>
+
 ::: details 相关 issues
 https://github.com/microsoft/monaco-editor/issues/4026
 :::

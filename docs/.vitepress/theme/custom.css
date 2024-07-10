@@ -4,7 +4,7 @@
   --vp-c-brand-1: #0076fc;
   --vp-c-brand-2: #0076fc;
   --vp-c-indigo-3: #0076fc;
-  --vp-c-brand-next: #F2F4FF;
+  --vp-c-brand-next: #f2f4ff;
   /* 按钮颜色 */
   --vp-button-brand-bg: var(--vp-c-brand);
   /* 首页标题和图片渐变颜色 */
@@ -18,4 +18,19 @@
 /* 换行 */
 .VPDoc .container > .content * {
   white-space: break-spaces !important;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* 滑块样式 */
+::-webkit-scrollbar-thumb {
+  background-color: #0076fc;
+  border-radius: 2px;
+}
+/* 滚动条轨道样式 */
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 2px;
 }

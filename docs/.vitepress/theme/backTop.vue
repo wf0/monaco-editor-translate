@@ -77,7 +77,7 @@ onBeforeUnmount(() => window.removeEventListener("scroll", onScroll));
   box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.15);
 }
 .vitepress-backTop-main:hover svg {
-  animation: bounce linear 0.5s infinite;
+  animation: bounce linear 0.6s infinite;
   transition: all 0.5;
 }
 svg {
