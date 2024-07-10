@@ -1,10 +1,10 @@
 # Monaco Editor API
 
+<backTop/>
+
 ::: details 原文链接
 https://microsoft.github.io/monaco-editor/docs.html
 :::
-
-<backTop/>
 
 ## 概述
 
