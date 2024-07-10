@@ -25,7 +25,7 @@ interface InlineCompletions<TItem> {
 - 描述：当设置并且用户键入建议而不从中派生时，内联建议不会更新。
 
 ## items
-- 类型：`readonly` [TItem](/api/languages/TItem.md)
+- 类型：`readonly` [TItem](#泛型)
 
 ## suppressSuggestions
 - 类型：`boolean`

@@ -18,5 +18,5 @@ interface LinkedEditingRangeProvider {
   - `model`: [ITextModel](/api/editor/ITextModel.md)
   - `position`: [IPosition](/api/IPosition.md)
   - `token`: [CancellationToken](/api/CancellationToken.md)
-- 返回值：[ProviderResult](/api/ProviderResult.md)<[LinkedEditingRanges](/api/languages/LinkedEditingRanges.md)>
+- 返回值：[ProviderResult](/api/languages/ProviderResult.md)<[LinkedEditingRanges](/api/languages/LinkedEditingRanges.md)>
 - 描述：提供链接编辑范围。

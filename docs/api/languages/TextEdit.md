@@ -13,7 +13,7 @@ interface TextEdit {
 ```
 
 ## eol
-- 类型：[EndOfLineSequence](/api/languages/EndOfLineSequence.md)
+- 类型：[EndOfLineSequence](/api/editor/EndOfLineSequence.md)
 ## range
 - 类型：[IRange](/api/IRange.md)
 ## text

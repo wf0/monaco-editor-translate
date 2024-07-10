@@ -57,7 +57,7 @@ interface InlineCompletionsProvider<T> {
   - `position`: [Position](/api/Position.md)
   - `context`: [InlineCompletionContext](/api/languages/InlineCompletionContext.md)
   - `token`: [CancellationToken](/api/CancellationToken.md)
-- 返回值：[ProviderResult](/api/ProviderResult.md)`<T>`
+- 返回值：[ProviderResult](/api/languages/ProviderResult.md)`<T>`
 - 描述：提供建议的函数。
 
 

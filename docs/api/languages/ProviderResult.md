@@ -9,4 +9,4 @@ https://microsoft.github.io/monaco-editor/docs.html#types/languages.ProviderResu
 ```ts
 ProviderResult<T>: T | undefined | null | Thenable<T | undefined | null>
 ```
-- [Thenable](/api/languages/Thenable.md)
+- [Thenable](/api/Thenable.md)

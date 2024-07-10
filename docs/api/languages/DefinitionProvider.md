@@ -15,6 +15,6 @@ interface DefinitionProvider {
 - 参数：
   - `model`: [ITextModel](/api/editor/ITextModel.md)
   - `postion`: [IPosition](/api/IPosition.md)
-  - `token`: [CancellationToken](/api/languages/CancellationToken.md)
+  - `token`: [CancellationToken](/api/CancellationToken.md)
 - 返回值：[ProviderResult](/api/languages/ProviderResult.md)<[Location](/api/languages/Location.md)>
 - 描述：提供给定位置的符号定义和文档。

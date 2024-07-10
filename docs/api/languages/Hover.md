@@ -22,7 +22,7 @@ interface Hover {
 - 类型: `boolean`
 - 描述：可以增加悬停的冗长程度
 ## contents
-- 类型: [IMarkdownString](/api/languages/IMarkdownString.md)[]
+- 类型: [IMarkdownString](/api/IMarkdownString.md)[]
 - 描述：内容
 ## range
 - 类型: [IRange](/api/IRange.md)

@@ -18,7 +18,7 @@ interface LinkProvider {
 - 类型：`((link, token) => ProviderResult<ILink>)`
 - 参数：
   - `link`: [ILink](/api/languages/ILink.md)
-  - `token`: [CancellationToken](/api/languages/CancellationToken.md)
+  - `token`: [CancellationToken](/api/CancellationToken.md)
 - 返回值：[ProviderResult](/api/languages/ProviderResult.md)<[ILinksList](/api/languages/ILinksList.md)>
 ## provideLinks
 - 语法：`provideLinks(model, token): ProviderResult<ILinksList>`

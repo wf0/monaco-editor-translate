@@ -20,4 +20,4 @@ interface InlayHintLabelPart {
 ## location
 - 类型：[Location](/api/languages/Location.md)
 ## tooltip
-- 类型：`string |` [IMarkdownString](/api/languages/IMarkdownString.md)
+- 类型：`string |` [IMarkdownString](/api/IMarkdownString.md)
