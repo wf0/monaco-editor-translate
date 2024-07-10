@@ -1,6 +1,11 @@
 # IShortMonarchLanguageRule2
         
 ::: details 原文链接
-This is a details block.
+https://microsoft.github.io/monaco-editor/docs.html#types/languages.IShortMonarchLanguageRule2.html
 :::
-        
+
+```ts
+IShortMonarchLanguageRule2: [string | RegExp, IMonarchLanguageAction, string]
+```
+
+- `[string | RegExp, `[IMonarchLanguageAction](/api/languages/IMonarchLanguageAction.md)`, string]`

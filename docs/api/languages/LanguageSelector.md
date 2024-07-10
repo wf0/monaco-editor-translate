@@ -7,3 +7,5 @@ https://microsoft.github.io/monaco-editor/docs.html#types/languages.LanguageSele
 ```ts
 LanguageSelector: string | LanguageFilter | ReadonlyArray<string | LanguageFilter>
 ```
+
+- `string | `[LanguageFilter](/api/languages/LanguageFilter.md)` | ReadonlyArray<string | `[LanguageFilter](/api/languages/LanguageFilter.md)`>`
