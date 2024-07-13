@@ -46,100 +46,100 @@ const data=[
 <dataItems :data="data" />
 
 ## addCommand
-<!--@include: ./editor/addCommand.md{6,}-->
+<!--@include: ./editor/addCommand.md{8,}-->
 
 ## addEditorAction
-<!--@include: ./editor/addEditorAction.md{6,}-->
+<!--@include: ./editor/addEditorAction.md{8,}-->
 
 ## addKeybindingRule
-<!--@include: ./editor/addKeybindingRule.md{6,}-->
+<!--@include: ./editor/addKeybindingRule.md{8,}-->
 
 ## addKeybindingRules
-<!--@include: ./editor/addKeybindingRules.md{6,}-->
+<!--@include: ./editor/addKeybindingRules.md{8,}-->
 
 ## colorize
-<!--@include: ./editor/colorize.md{6,}-->
+<!--@include: ./editor/colorize.md{8,}-->
 
 ## colorizeElement
-<!--@include: ./editor/colorizeElement.md{6,}-->
+<!--@include: ./editor/colorizeElement.md{8,}-->
 
 ## colorizeModelLine
-<!--@include: ./editor/colorizeModelLine.md{6,}-->
+<!--@include: ./editor/colorizeModelLine.md{8,}-->
 
 ## create
-<!--@include: ./editor/create.md{6,}-->
+<!--@include: ./editor/create.md{8,}-->
 
 ## createDiffEditor
-<!--@include: ./editor/createDiffEditor.md{6,}-->
+<!--@include: ./editor/createDiffEditor.md{8,}-->
 
 ## createModel
-<!--@include: ./editor/createModel.md{6,}-->
+<!--@include: ./editor/createModel.md{8,}-->
 
 ## createMultiFileDiffEditor
-<!--@include: ./editor/createMultiFileDiffEditor.md{6,}-->
+<!--@include: ./editor/createMultiFileDiffEditor.md{8,}-->
 
 ## createWebWorker
-<!--@include: ./editor/createWebWorker.md{6,}-->
+<!--@include: ./editor/createWebWorker.md{8,}-->
 
 ## defineTheme
-<!--@include: ./editor/defineTheme.md{6,}-->
+<!--@include: ./editor/defineTheme.md{8,}-->
 
 ## getDiffEditors
-<!--@include: ./editor/getDiffEditors.md{6,}-->
+<!--@include: ./editor/getDiffEditors.md{8,}-->
 
 ## getEditors
-<!--@include: ./editor/getEditors.md{6,}-->
+<!--@include: ./editor/getEditors.md{8,}-->
 
 ## getModel
-<!--@include: ./editor/getModel.md{6,}-->
+<!--@include: ./editor/getModel.md{8,}-->
 
 ## getModelMarkers
-<!--@include: ./editor/getModelMarkers.md{6,}-->
+<!--@include: ./editor/getModelMarkers.md{8,}-->
 
 ## getModels
-<!--@include: ./editor/getModels.md{6,}-->
+<!--@include: ./editor/getModels.md{8,}-->
 
 ## onDidChangeMarkers
-<!--@include: ./editor/onDidChangeMarkers.md{6,}-->
+<!--@include: ./editor/onDidChangeMarkers.md{8,}-->
 
 ## onDidChangeModelLanguage
-<!--@include: ./editor/onDidChangeModelLanguage.md{6,}-->
+<!--@include: ./editor/onDidChangeModelLanguage.md{8,}-->
 
 ## onDidCreateDiffEditor
-<!--@include: ./editor/onDidCreateDiffEditor.md{6,}-->
+<!--@include: ./editor/onDidCreateDiffEditor.md{8,}-->
 
 ## onDidCreateEditor
-<!--@include: ./editor/onDidCreateEditor.md{6,}-->
+<!--@include: ./editor/onDidCreateEditor.md{8,}-->
 
 ## onDidCreateModel
-<!--@include: ./editor/onDidCreateModel.md{6,}-->
+<!--@include: ./editor/onDidCreateModel.md{8,}-->
 
 ## onWillDisposeModel
-<!--@include: ./editor/onWillDisposeModel.md{6,}-->
+<!--@include: ./editor/onWillDisposeModel.md{8,}-->
 
 ## registerCommand
-<!--@include: ./editor/registerCommand.md{6,}-->
+<!--@include: ./editor/registerCommand.md{8,}-->
 
 ## registerEditorOpener
-<!--@include: ./editor/registerEditorOpener.md{6,}-->
+<!--@include: ./editor/registerEditorOpener.md{8,}-->
 
 ## registerLinkOpener
-<!--@include: ./editor/registerLinkOpener.md{6,}-->
+<!--@include: ./editor/registerLinkOpener.md{8,}-->
 
 ## remeasureFonts
-<!--@include: ./editor/remeasureFonts.md{6,}-->
+<!--@include: ./editor/remeasureFonts.md{8,}-->
 
 ## removeAllMarkers
-<!--@include: ./editor/removeAllMarkers.md{6,}-->
+<!--@include: ./editor/removeAllMarkers.md{8,}-->
 
 ## setModelLanguage
-<!--@include: ./editor/setModelLanguage.md{6,}-->
+<!--@include: ./editor/setModelLanguage.md{8,}-->
 
 ## setModelMarkers
-<!--@include: ./editor/setModelMarkers.md{6,}-->
+<!--@include: ./editor/setModelMarkers.md{8,}-->
 
 ## setTheme
-<!--@include: ./editor/setTheme.md{6,}-->
+<!--@include: ./editor/setTheme.md{8,}-->
 
 ## tokenize
-<!--@include: ./editor/tokenize.md{6,}-->
+<!--@include: ./editor/tokenize.md{8,}-->

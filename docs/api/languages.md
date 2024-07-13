@@ -55,112 +55,112 @@ const data = [
 <dataItems :data="data" />
 
 ## getEncodedLanguageId
-<!--@include: ./languages/getEncodedLanguageId.md{6,}-->
+<!--@include: ./languages/getEncodedLanguageId.md{8,}-->
 
 ## getLanguages
-<!--@include: ./languages/getLanguages.md{6,}-->
+<!--@include: ./languages/getLanguages.md{8,}-->
 
 ## onLanguage
-<!--@include: ./languages/onLanguage.md{6,}-->
+<!--@include: ./languages/onLanguage.md{8,}-->
 
 ## onLanguageEncountered
-<!--@include: ./languages/onLanguageEncountered.md{6,}-->
+<!--@include: ./languages/onLanguageEncountered.md{8,}-->
 
 ## register
-<!--@include: ./languages/register.md{6,}-->
+<!--@include: ./languages/register.md{8,}-->
 
 ## registerCodeActionProvider
-<!--@include: ./languages/registerCodeActionProvider.md{6,}-->
+<!--@include: ./languages/registerCodeActionProvider.md{8,}-->
 
 ## registerCodeLensProvider
-<!--@include: ./languages/registerCodeLensProvider.md{6,}-->
+<!--@include: ./languages/registerCodeLensProvider.md{8,}-->
 
 ## registerColorProvider
-<!--@include: ./languages/registerColorProvider.md{6,}-->
+<!--@include: ./languages/registerColorProvider.md{8,}-->
 
 ## registerCompletionItemProvider
-<!--@include: ./languages/registerCompletionItemProvider.md{6,}-->
+<!--@include: ./languages/registerCompletionItemProvider.md{8,}-->
 
 ## registerDeclarationProvider
-<!--@include: ./languages/registerDeclarationProvider.md{6,}-->
+<!--@include: ./languages/registerDeclarationProvider.md{8,}-->
 
 ## registerDefinitionProvider
-<!--@include: ./languages/registerDefinitionProvider.md{6,}-->
+<!--@include: ./languages/registerDefinitionProvider.md{8,}-->
 
 ## registerDocumentFormattingEditProvider
-<!--@include: ./languages/registerDocumentFormattingEditProvider.md{6,}-->
+<!--@include: ./languages/registerDocumentFormattingEditProvider.md{8,}-->
 
 ## registerDocumentHighlightProvider
-<!--@include: ./languages/registerDocumentHighlightProvider.md{6,}-->
+<!--@include: ./languages/registerDocumentHighlightProvider.md{8,}-->
 
 ## registerDocumentRangeFormattingEditProvider
-<!--@include: ./languages/registerDocumentRangeFormattingEditProvider.md{6,}-->
+<!--@include: ./languages/registerDocumentRangeFormattingEditProvider.md{8,}-->
 
 ## registerDocumentRangeSemanticTokensProvider
-<!--@include: ./languages/registerDocumentRangeSemanticTokensProvider.md{6,}-->
+<!--@include: ./languages/registerDocumentRangeSemanticTokensProvider.md{8,}-->
 
 ## registerDocumentSemanticTokensProvider
-<!--@include: ./languages/registerDocumentSemanticTokensProvider.md{6,}-->
+<!--@include: ./languages/registerDocumentSemanticTokensProvider.md{8,}-->
 
 ## registerDocumentSymbolProvider
-<!--@include: ./languages/registerDocumentSymbolProvider.md{6,}-->
+<!--@include: ./languages/registerDocumentSymbolProvider.md{8,}-->
 
 ## registerFoldingRangeProvider
-<!--@include: ./languages/registerFoldingRangeProvider.md{6,}-->
+<!--@include: ./languages/registerFoldingRangeProvider.md{8,}-->
 
 ## registerHoverProvider
-<!--@include: ./languages/registerHoverProvider.md{6,}-->
+<!--@include: ./languages/registerHoverProvider.md{8,}-->
 
 ## registerImplementationProvider
-<!--@include: ./languages/registerImplementationProvider.md{6,}-->
+<!--@include: ./languages/registerImplementationProvider.md{8,}-->
 
 ## registerInlayHintsProvider
-<!--@include: ./languages/registerInlayHintsProvider.md{6,}-->
+<!--@include: ./languages/registerInlayHintsProvider.md{8,}-->
 
 ## registerInlineCompletionsProvider
-<!--@include: ./languages/registerInlineCompletionsProvider.md{6,}-->
+<!--@include: ./languages/registerInlineCompletionsProvider.md{8,}-->
 
 ## registerInlineEditProvider
-<!--@include: ./languages/registerInlineEditProvider.md{6,}-->
+<!--@include: ./languages/registerInlineEditProvider.md{8,}-->
 
 ## registerLinkProvider
-<!--@include: ./languages/registerLinkProvider.md{6,}-->
+<!--@include: ./languages/registerLinkProvider.md{8,}-->
 
 ## registerLinkedEditingRangeProvider
-<!--@include: ./languages/registerLinkedEditingRangeProvider.md{6,}-->
+<!--@include: ./languages/registerLinkedEditingRangeProvider.md{8,}-->
 
 ## registerNewSymbolNameProvider
-<!--@include: ./languages/registerNewSymbolNameProvider.md{6,}-->
+<!--@include: ./languages/registerNewSymbolNameProvider.md{8,}-->
 
 ## registerOnTypeFormattingEditProvider
-<!--@include: ./languages/registerOnTypeFormattingEditProvider.md{6,}-->
+<!--@include: ./languages/registerOnTypeFormattingEditProvider.md{8,}-->
 
 ## registerReferenceProvider
-<!--@include: ./languages/registerReferenceProvider.md{6,}-->
+<!--@include: ./languages/registerReferenceProvider.md{8,}-->
 
 ## registerRenameProvider
-<!--@include: ./languages/registerRenameProvider.md{6,}-->
+<!--@include: ./languages/registerRenameProvider.md{8,}-->
 
 ## registerSelectionRangeProvider
-<!--@include: ./languages/registerSelectionRangeProvider.md{6,}-->
+<!--@include: ./languages/registerSelectionRangeProvider.md{8,}-->
 
 ## registerSignatureHelpProvider
-<!--@include: ./languages/registerSignatureHelpProvider.md{6,}-->
+<!--@include: ./languages/registerSignatureHelpProvider.md{8,}-->
 
 ## registerTokensProviderFactory
-<!--@include: ./languages/registerTokensProviderFactory.md{6,}-->
+<!--@include: ./languages/registerTokensProviderFactory.md{8,}-->
 
 ## registerTypeDefinitionProvider
-<!--@include: ./languages/registerTypeDefinitionProvider.md{6,}-->
+<!--@include: ./languages/registerTypeDefinitionProvider.md{8,}-->
 
 ## setColorMap
-<!--@include: ./languages/setColorMap.md{6,}-->
+<!--@include: ./languages/setColorMap.md{8,}-->
 
 ## setLanguageConfiguration
-<!--@include: ./languages/setLanguageConfiguration.md{6,}-->
+<!--@include: ./languages/setLanguageConfiguration.md{8,}-->
 
 ## setMonarchTokensProvider
-<!--@include: ./languages/setMonarchTokensProvider.md{6,}-->
+<!--@include: ./languages/setMonarchTokensProvider.md{8,}-->
 
 ## setTokensProvider
-<!--@include: ./languages/setTokensProvider.md{6,}-->
+<!--@include: ./languages/setTokensProvider.md{8,}-->
