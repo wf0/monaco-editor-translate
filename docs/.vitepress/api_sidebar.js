@@ -1471,7 +1471,7 @@ const rootItems = [
   ...rootOtherItems,
 ];
 
-export const sidebar = [
+export const api_sidebar = [
   {
     items: [
       {

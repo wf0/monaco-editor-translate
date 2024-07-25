@@ -12,6 +12,9 @@ hero:
     - theme: brand
       text: 快速开始
       link: api
+    - theme: alt
+      text: 示例
+      link: example
 ---
 
 ::: danger ⛔ 写在前面
