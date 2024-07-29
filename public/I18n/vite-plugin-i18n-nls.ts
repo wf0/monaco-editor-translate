@@ -45,7 +45,7 @@ export function esbuildPluginMonacoEditorNls(options: Options): EsbuildPlugin {
     return {
         name: 'esbuild-plugin-monaco-editor-nls',
         setup(build) {
-            build.onLoad({ filter: /esm[/\\]vs[/\\]nls\.js/ }, async() => {
+            build.onLoad({ filter: /esm[/\\]vs[/\\]nls\.js/ }, async () => {
                 return {
                     contents: getLocalizeCode(CURRENT_LOCALE_DATA),
                     loader: 'js',
@@ -74,7 +74,7 @@ export function esbuildPluginMonacoEditorNls(options: Options): EsbuildPlugin {
  * @param options 替换语言包
  * @returns
  */
-export default function(options: Options): Plugin {
+export default function (options: Options): Plugin {
     options = Object.assign({ locale: Languages.en_gb }, options)
     const CURRENT_LOCALE_DATA = getLocalizeMapping(options.locale, options.localeData)
 
@@ -151,9 +151,9 @@ function transformLocalizeFuncCode(
  * @returns
  */
 function getLocalizeMapping(locale: Languages, localeData: Record<string, any> | undefined = undefined) {
-    if(localeData)return JSON.stringify(localeData)
+    if (localeData) return JSON.stringify(localeData)
     const locale_data_path = path.join(__dirname, `./locale/${locale}.json`)
-
+    console.log('locale_data_path', locale_data_path);
     return fs.readFileSync(locale_data_path) as unknown as string
 }
 

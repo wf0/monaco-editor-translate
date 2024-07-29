@@ -2,9 +2,6 @@
 const plugins = [
   { text: "中文汉化", link: "/example/plugins/I18n" },
   { text: "主题定制", link: "/example/plugins/Theme" },
-  { text: "自动闭合标签", link: "/example/plugins/AutoClosed" },
-  { text: "代码提示", link: "/example/plugins/CodeTips" },
-  { text: "自动闭合标签", link: "/example/plugins/AutoClosed" },
   { text: "格式化插件", link: "/example/plugins/Formatter" },
 ];
 
@@ -29,7 +26,6 @@ export const example_sidebar = [
       { text: "插件拓展", collapsed: true, items: plugins },
       { text: "自身功能", collapsed: true, items: func },
       { text: "其他", collapsed: true, items: other },
-      //   https://juejin.cn/post/7376514713742819378#heading-4
     ],
   },
 ];
