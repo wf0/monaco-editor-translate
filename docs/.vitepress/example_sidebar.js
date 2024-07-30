@@ -8,7 +8,7 @@ const plugins = [
 // 自身功能 func
 const func = [
   { text: "隐藏右键某项菜单", link: "/example/func/HiddenMenu" },
-  { text: "版本对比", link: "/example/func/Diff" },
+  { text: "差异对比", link: "/example/func/Diff" },
   { text: "多 Tab 标签", link: "/example/func/Tabs" },
 ];
 

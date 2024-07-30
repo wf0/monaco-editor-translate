@@ -19,7 +19,7 @@ npm i -D @shikijs/monaco shiki
 ```js
 import { createHighlighter } from 'shiki'
 import { shikiToMonaco } from '@shikijs/monaco'
-import * as monaco from 'monaco-editor-core'
+import * as monaco from 'monaco-editor'
 
 // 创建一个可复用的语法高亮器
 const highlighter = await createHighlighter({
@@ -34,7 +34,7 @@ shikiToMonaco(highlighter, monaco);
 
 const dom = document.querySelector(".editor");
 
-const myEditor = editor.create(dom, {
+const myEditor = monaco.editor.create(dom, {
  value: `// create a model`,
  language: "javascript",
  theme: "vitesse-dark", // 这里填的就是上面注册的主题
