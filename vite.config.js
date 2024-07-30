@@ -5,7 +5,7 @@ import I18n from "./public/I18n/i18n.json";
 import nlsPlugin, {
   Languages,
   esbuildPluginMonacoEditorNls,
-} from "./public/I18n/vite-plugin-i18n-nls";
+} from "./public/I18n/vite-plugin-i18n-nls.js";
 
 // https://vitejs.dev/config/
 export default defineConfig({

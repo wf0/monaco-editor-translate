@@ -11,7 +11,7 @@
 1. 安装 shiki
 
 ```js
-npm i -D @shikijs/monaco
+npm i -D @shikijs/monaco shiki
 ```
 
 2. 使用方法
@@ -21,30 +21,36 @@ import { createHighlighter } from 'shiki'
 import { shikiToMonaco } from '@shikijs/monaco'
 import * as monaco from 'monaco-editor-core'
 
- // 创建一个可复用的语法高亮器
-  const highlighter = await createHighlighter({
-    // 这里的 themes 参数可以传入多个主题，在 https://shiki.tmrs.site/themes#%E4%B8%BB%E9%A2%98 查看更多
+// 创建一个可复用的语法高亮器
+const highlighter = await createHighlighter({
+    // 这里的 themes 参数可以传入多个主题，
+    // 在 https://shiki.tmrs.site/themes#%E4%B8%BB%E9%A2%98 查看更多
     themes: ["vitesse-dark", "vitesse-light", "andromeeda", "aurora-x"],
     langs: ["javascript", "typescript", "vue"],
-  });
+});
 
-  // 注册 Shiki 主题，并为 Monaco 提供语法高亮
-  shikiToMonaco(highlighter, monaco);
+// 注册 Shiki 主题，并为 Monaco 提供语法高亮
+shikiToMonaco(highlighter, monaco);
 
-  const dom = document.querySelector(".editor");
+const dom = document.querySelector(".editor");
 
-  const myEditor = editor.create(dom, {
-    value: `// create a model`,
-    language: "javascript",
-    theme: "vitesse-dark",
-  });
+const myEditor = editor.create(dom, {
+ value: `// create a model`,
+ language: "javascript",
+ theme: "vitesse-dark", // 这里填的就是上面注册的主题
+});
 
-// 正常使用
+// 通过 API 来实现动态更换主题
+// editor.setTheme(theme)
 ```
+
+
+<img src="/shikiTheme.gif" />
+
+## 主题列表
 
 [更多主题，请移步(主题 | Shiki)](https://shiki.tmrs.site/themes#%E4%B8%BB%E9%A2%98)
 
-<img src="/shikiTheme.gif" />
 
 ## 参考资料
 https://juejin.cn/post/7376514713742819378#heading-2

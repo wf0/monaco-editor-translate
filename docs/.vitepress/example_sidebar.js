@@ -9,7 +9,6 @@ const plugins = [
 const func = [
   { text: "隐藏右键某项菜单", link: "/example/func/HiddenMenu" },
   { text: "版本对比", link: "/example/func/Diff" },
-  { text: "选中代码执行", link: "/example/func/ChooseCode" },
   { text: "多 Tab 标签", link: "/example/func/Tabs" },
 ];
 
@@ -20,7 +19,7 @@ const other = [
 
 export const example_sidebar = [
   {
-    text: "示例说明",
+    text: "应用示例",
     link: "/example",
     items: [
       { text: "插件拓展", collapsed: true, items: plugins },

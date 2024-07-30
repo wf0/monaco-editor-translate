@@ -13,7 +13,7 @@ hero:
       text: 快速开始
       link: api
     - theme: alt
-      text: 示例
+      text: 应用示例
       link: example
 ---
 

@@ -23,7 +23,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "API 文档", link: "/api" },
-      { text: "示例", link: "/example" },
+      { text: "应用示例", link: "/example" },
       {
         text: "英文官网",
         link: "https://microsoft.github.io/monaco-editor/docs.html",
