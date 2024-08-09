@@ -1,5 +1,7 @@
 # 主题定制
 
+<backTop />
+
 ## 传统方案
 
 我们可以使用 Monaco Editor 原有功能来实现主题的定制，具体用法可参考 [defineTheme](/api/editor/defineTheme.html#definetheme)。

@@ -1,8 +1,8 @@
 // .vitepress/theme/index.js
 import DefaultTheme from "vitepress/theme";
-import dataItems from "./dataItems.vue";
-import backTop from "./backTop.vue";
-import "./custom.css";
+import dataItems from "./components/dataItems.vue";
+import backTop from "./components/backTop.vue";
+import "./custom/index.css";
 
 /** @type {import('vitepress').Theme} */
 export default {

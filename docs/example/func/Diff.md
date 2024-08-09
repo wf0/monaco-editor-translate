@@ -1,5 +1,7 @@
 # 差异对比
 
+<backTop />
+
 版本对比在编辑器中可谓是最常用、重要的功能之一，而 Monaco Editor 自身就支持该功能，下面看看如何使用[createDiffEditor](/api/editor.html#creatediffeditor)吧。
 
 ## 创建差异编辑器
@@ -16,7 +18,7 @@ const diffEditor = editor.createDiffEditor(
 ```
 
 ## 设置差异编辑器模型
-设置模型的方法是 `setModel` ,但是差异编辑器需要 `original` 和 `modified` 两个模型参数，因此，可以先创建两个模型参数，方法是 `setmodel`。
+设置模型的方法是 `setModel` ,但是差异编辑器需要 `original` 和 `modified` 两个模型参数，因此，可以先创建两个模型参数，方法是 `createModel`。
 
 ```js
 import { editor } from "monaco-editor";
