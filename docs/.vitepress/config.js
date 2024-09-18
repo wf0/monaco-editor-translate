@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
-import { api_sidebar } from "./api_sidebar";
-import { example_sidebar } from "./example_sidebar";
+import { api_sidebar } from "./sidebar/api";
+import { example_sidebar } from "./sidebar/example";
+import { unippt_sidebar } from "./sidebar/unippt";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Monaco Editor Translate",
@@ -25,8 +27,14 @@ export default defineConfig({
       { text: "API 文档", link: "/api" },
       { text: "应用示例", link: "/example" },
       {
-        text: "英文官网",
-        link: "https://microsoft.github.io/monaco-editor/docs.html",
+        text: "其他链接",
+        items: [
+          {
+            text: "英文官网",
+            link: "https://microsoft.github.io/monaco-editor/docs.html",
+          },
+          { text: "Uni PPT 官网", link: "/unippt" },
+        ],
       },
     ],
     // 搜索
@@ -34,6 +42,7 @@ export default defineConfig({
     // 多侧边栏
     sidebar: {
       api: api_sidebar,
+      unippt: unippt_sidebar,
       example: example_sidebar,
     },
     socialLinks: [
