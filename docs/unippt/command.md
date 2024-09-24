@@ -39,12 +39,8 @@
 <!--@include: ./command/executeRecord.md{4,}-->
 
 <!-- 添加网格 -->
-## executeAddGrid
-<!--@include: ./command/executeAddGrid.md{4,}-->
-
-<!-- 添加标尺 -->
-## executeAddRuler
-<!--@include: ./command/executeAddRuler.md{4,}-->
+## executeSetBackground
+<!--@include: ./command/executeSetBackground.md{4,}-->
 
 <!-- 删除幻灯片 -->
 ## executeDeleteSlide
@@ -110,6 +106,14 @@
 ## executePaste
 <!--@include: ./command/executePaste.md{4,}-->
 
+
+::: warning 温馨提示
+executeCut、executeCopy、executePaste 推荐使用快捷键完成操作， **复制粘贴的对象是幻灯片，需要鼠标悬浮到幻灯片上才可实现。**
+
+具体操作可见下示例：
+<img src="/unippt-copy-paste.gif" />
+:::
+
 <!--  置于顶层 -->
 ## executeTop
 <!--@include: ./command/executeTop.md{4,}-->
@@ -125,6 +129,11 @@
 <!-- 置于底层 -->
 ## executeBottom
 <!--@include: ./command/executeBottom.md{4,}-->
+
+::: warning 温馨提示
+元素层级的设置，需要先有元素被选中哈！
+<img src="/unippt-level.gif" />
+:::
 
 <!-- 水平居左 -->
 ## executeHorizontLeft
@@ -149,6 +158,12 @@
 <!--  垂直置底 -->
 ## executeVerticalBottom
 <!--@include: ./command/executeVerticalBottom.md{4,}-->
+
+::: warning 温馨提示
+设置元素的水平垂直位置时，需要先选中元素哈！
+<img src="/unippt-position.gif" />
+:::
+
 
 <!--  动画 -->
 ## executeAnimation

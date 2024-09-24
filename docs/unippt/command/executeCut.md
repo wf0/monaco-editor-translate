@@ -2,14 +2,6 @@
 
 <backTop />
 
-- 描述：
+- 描述：剪切 **（快捷键 Ctrl + X）**
 
-- 语法：
-
-- 参数：
-
-- 返回值：
-
-- 示例：
-
-- 输出: 
+- 语法：`unippt.command.executeCut()`

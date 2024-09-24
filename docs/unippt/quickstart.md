@@ -1,5 +1,6 @@
 # 快速开始
 
+
 ## npm 使用
 
 ``` bash
@@ -11,6 +12,16 @@ import "uni-pptx/style.css";
 
 const uniPPT = new UniPPT({ container: "#app" });
 ```
+
+```css
+#app {
+    min-width: 1000px;
+    min-height: 600px;
+  }
+```
+::: warning 温馨提示
+为了达到最佳的显示效果，本项目推荐的挂载元素宽高尺寸应大于 **1000 x 600**;
+:::
 
 ## 浏览器使用
 

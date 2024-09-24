@@ -10,6 +10,7 @@
 
 - 示例：
 ```js
+// 实现的底层方法是 layer.toDataURL()，返回值是 base64
 unippt.command.getSlideImage();
 ```
 

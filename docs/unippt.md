@@ -3,11 +3,18 @@
 <backTop />
 
 
-
 ::: danger ⛔ 注意
-本应用为 Unite PowerPoint 项目官网文档，与 Monaco Editor 无关，仅借助 GitHub Pages 供外网访问，无其他关联性。
-
-**gitee 源代码请见**：[https://gitee.com/wfeng0/uni-pptx](https://gitee.com/wfeng0/uni-pptx)
+本应用为 UniPPT 项目官网文档，与 Monaco Editor 无关，仅借助 GitHub Pages 供外网访问，无其他关联性。
+:::
+::: danger ⛔ 注意
+本应用为 UniPPT 项目官网文档，与 Monaco Editor 无关，仅借助 GitHub Pages 供外网访问，无其他关联性。
+:::
+::: danger ⛔ 注意
+本应用为 UniPPT 项目官网文档，与 Monaco Editor 无关，仅借助 GitHub Pages 供外网访问，无其他关联性。
+:::
+::: danger 🔗 gitee 地址： [https://gitee.com/wfeng0/uni-pptx](https://gitee.com/wfeng0/uni-pptx)
+:::
+::: warning 如您还能看到这句话，则表示网站相关文档仍处于开发中，亦或 UniPPT 处于开发中，前往 [gitee](https://gitee.com/wfeng0/uni-pptx) 查看最新最新开发进度。
 :::
 
 ## 演示效果
@@ -23,6 +30,9 @@
 
 4. **如果发现项目侵权部分，请及时联系删除**，其他依赖均为开源项目，请查看对应开源项目的许可证。
 
+::: details 交流群：
+<img align='center' src="/user.png" />
+:::
 
 ## 📖 项目简介
 
