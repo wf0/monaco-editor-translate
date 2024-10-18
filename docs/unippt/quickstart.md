@@ -7,10 +7,10 @@
 npm install uni-pptx
 ```
 ```js
-import { UniPPT } from "uni-pptx";
+import { UniPPTX } from "uni-pptx";
 import "uni-pptx/style.css";
 
-const uniPPT = new UniPPT({ container: "#app" });
+const pptx = new UniPPTX({ container: "#app" });
 ```
 
 ```css
@@ -31,7 +31,7 @@ const uniPPT = new UniPPT({ container: "#app" });
 
 <script>
     window.onload = function () {
-        const uniPPT = new UniPPT({ container: "#app" });
+        const pptx = new UniPPTX({ container: "#app" });
     }
 </script>
 
