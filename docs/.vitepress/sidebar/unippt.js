@@ -1,6 +1,6 @@
 export const unippt_sidebar = [
   {
-    text: "UniPPT - 在线演示文稿",
+    text: "项目说明",
     link: "/unippt",
     items: [
       { text: "🎉 快速开始", link: "/unippt/quickstart" },

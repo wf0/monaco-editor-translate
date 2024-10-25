@@ -16,6 +16,18 @@ pptx.eventBus.on(eventName, eventHandler)
 ```
 
 
+<!-- 
+
+ loaded: () => void; // 加载完成
+  destroyed: () => void; // 销毁
+  zoom: (scale: number) => void; // 缩放比例变化事件
+  saved: (payload: string) => void; // 保存事件，需要回传 JSON 数据 [layer1.json,layer2.json]
+  thumbChanged: (payload: string[]) => void; // layer 图层发生变化，需要更新缩略图
+  translate: (payload: { dx: number; dy: number; baseStyle: string }) => void; // 平移事件
+
+ -->
+
+
 
 ## saved
 
@@ -23,7 +35,7 @@ pptx.eventBus.on(eventName, eventHandler)
 
 - 语法：`unippt.eventBus.on('saved',(data: string)=>void)`
 
-- 参数：`data: string` 返回值是幻灯片数组的JSON字符串, 例如 `[layer1.json,layer2.json]`
+- 参数：`data: string` 返回值是幻灯片的JSON字符串数组, 例如 `[layer1.json,layer2.json]`
 
 - 示例：
 ```ts
