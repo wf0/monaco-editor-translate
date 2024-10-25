@@ -1,5 +1,8 @@
 # 重写相关方法
 
+<backTop/>
+<HiddenHeder />
+
 
 ## 重写 konva 基类
 

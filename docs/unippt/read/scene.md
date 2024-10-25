@@ -1,5 +1,8 @@
 # 表格、统计图实现思路
 
+<backTop/>
+<HiddenHeder />
+
 表格、统计图、LOGO 等绘制类实现思路相通，均采用 **[Konva 自定义图形](http://konvajs-doc.bluehymn.com/docs/shapes/Custom.html)** 实现，底层是通过 canvas API 手动绘制想要图案，如下示例：
 
 ```ts

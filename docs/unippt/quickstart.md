@@ -1,5 +1,8 @@
 # 快速开始
 
+<backTop/>
+<HiddenHeder />
+
 
 ## npm 使用
 

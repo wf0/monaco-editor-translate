@@ -1,6 +1,7 @@
 # Command API
 
 <backTop/>
+<HiddenHeder />
 
 <!-- 上一个幻灯片 -->
 ## executePrevSlide

@@ -1,6 +1,10 @@
 # 数据存储方案及优化
 
 
+<backTop/>
+<HiddenHeder />
+
+
 ## 存储方案
 
 目前使用的存储方案是 JSON.stringify() 字符串存储到 DB 中`（也就是 eventBus.on('saved')、command.executeSave() 的返回值）`。

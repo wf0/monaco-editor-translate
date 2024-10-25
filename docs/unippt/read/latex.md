@@ -1,5 +1,8 @@
 # Latex 公式的使用及注意事项
 
+<backTop/>
+<HiddenHeder />
+
 本项目使用的公式编辑方案是[MathLive Demo](https://cortexjs.io/mathlive/demo/):
 
 <img src='/unippt-mathlive-demo.png' />
