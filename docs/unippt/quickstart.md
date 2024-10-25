@@ -1,7 +1,11 @@
+---
+navbar: false
+---
+
 # 快速开始
 
 <backTop/>
-<HiddenHeder />
+
 
 
 ## npm 使用

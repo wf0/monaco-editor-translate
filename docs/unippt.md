@@ -1,7 +1,11 @@
+---
+navbar: false
+---
+
 # 项目说明
 
 <backTop />
-<HiddenHeder />
+
 
 
 ::: danger ⛔ 注意

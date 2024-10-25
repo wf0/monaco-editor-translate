@@ -1,7 +1,11 @@
+---
+navbar: false
+---
+
 # 快捷键
 
 <backTop/>
-<HiddenHeder />
+
 
 ## Ctrl + S
 - 描述：保存

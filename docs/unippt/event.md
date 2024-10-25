@@ -1,7 +1,11 @@
+---
+navbar: false
+---
+
 # 事件
 
 <backTop/>
-<HiddenHeder />
+
 
 ::: tip 提示
 为了规避 listener 只能响应一个方法的小缺陷，本项目使用 eventBus 进行事件的派发监听,不再提供 listener 方式进行事件监听。

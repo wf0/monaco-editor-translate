@@ -1,8 +1,12 @@
+---
+navbar: false
+---
+
 # 数据存储方案及优化
 
 
 <backTop/>
-<HiddenHeder />
+
 
 
 ## 存储方案

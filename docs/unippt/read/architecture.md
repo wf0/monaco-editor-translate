@@ -1,7 +1,11 @@
+---
+navbar: false
+---
+
 # 项目架构
 
 <backTop/>
-<HiddenHeder />
+
 
 <p>
     <img src="/unippt-jgt.png" />

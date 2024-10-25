@@ -1,7 +1,11 @@
+---
+navbar: false
+---
+
 # 文本编辑实现
 
 <backTop/>
-<HiddenHeder />
+
 
 
 http://konvajs-doc.bluehymn.com/docs/sandbox/Editable_Text.html
