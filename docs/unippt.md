@@ -30,7 +30,7 @@ navbar: false
 ::: danger 🔗 gitee 地址： [https://gitee.com/wfeng0/uni-pptx](https://gitee.com/wfeng0/uni-pptx)
 :::
 
-::: danger 🔗 在线体验地址： [https://ppprzl-5173.csb.app/?enter=demo](https://ppprzl-5173.csb.app/?enter=demo)
+::: danger 🔗 在线体验地址： [https://ppprzl-8909.csb.app#demo](https://ppprzl-8909.csb.app#demo)
 :::
 
 ::: warning ℹ️ 温馨提示
@@ -41,9 +41,6 @@ navbar: false
 
 3. UniPPTX 基础功能已经开发完成，但仍有部分核心功能尚未完善，处于开发中或筹备中，具体开发计划请查看 [gitee](https://gitee.com/wfeng0/uni-pptx/tree/master-alpha#-%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8)。
 :::
-
-
-
 
 
 ## © 版权说明
