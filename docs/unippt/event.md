@@ -15,7 +15,6 @@ navbar: false
 
 ```ts
 import { UniPPTX } from "uni-pptx";
-import "uni-pptx/style.css";
 
 const pptx = new UniPPTX({ container: "#app" });
 

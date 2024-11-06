@@ -15,7 +15,6 @@ npm install uni-pptx
 ```
 ```js
 import { UniPPTX } from "uni-pptx";
-import "uni-pptx/style.css";
 
 const pptx = new UniPPTX({ container: "#app" });
 ```
@@ -62,22 +61,3 @@ npm run dev
 
 项目使用了 Eslint 语法检查工具，因此对 node 的最低版本是有要求的哈~
 :::
-
-## 类型接口
-```ts
-/** 导出 PPtx 构造函数参数对象 */
-export interface IPptxOptions {
-  container: Element | HTMLElement | string; // 选择器
-  width?: number; // konva 宽度
-  height?: number; // konva 高度
-  websocket?: IYjsWebsocket;
-}
-
-// websocket 协同参数
-export interface IYjsWebsocket {
-  url: string; // 链接地址
-  roomname: string; // 房间名 - 用于区分不同的 协同 room
-  userid: string; // 用户id
-  username?: string; // 用户名
-}
-```
