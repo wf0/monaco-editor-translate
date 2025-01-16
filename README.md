@@ -49,3 +49,10 @@
 1. 针对每一个API，增加示例及截图，对不同的类、方法、属性进行更加详细的描述；
 2. 完善应用章节，方便用户快速了解如何 Monaco Editor 可能的应用场景。
 3. 持续更新，持续翻译，持续维护。
+
+
+<!-- 
+    github pages 部署流程：
+     1. npm run docs:build      // 生成静态文件
+     2. dist => https://github.com/wf0/wf0.github.io     // 提交到 gh-pages 分支
+ -->
